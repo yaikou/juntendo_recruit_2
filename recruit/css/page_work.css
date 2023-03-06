@@ -1,0 +1,207 @@
+.work ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.work p {
+  font-weight: 500;
+}
+.work .work_mainvisual {
+  margin-top: 124px;
+  position: relative;
+  margin-bottom: 45px;
+  height: 300px;
+}
+@media (max-width: 950px) {
+  .work .work_mainvisual {
+    margin-top: 80px;
+  }
+}
+.work .work_mainvisual .img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: none;
+}
+.work .work_mainvisual .caption {
+  position: absolute;
+  font-size: 4.8rem;
+  font-weight: 700;
+  left: 0;
+  right: 0;
+  top: calc(50% - 24px);
+  line-height: 1;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .work .work_mainvisual .caption {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .work .work_mainvisual .caption {
+    font-size: 2.7rem;
+  }
+}
+.work h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .work h2 {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .work h2 {
+    font-size: 2.6rem;
+  }
+}
+.work .sec-message {
+  margin-bottom: 105px;
+}
+@media (max-width: 768px) {
+  .work .sec-message {
+    margin-bottom: 80px;
+  }
+}
+.work .sec-message h2 {
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  .work .sec-message h2 {
+    margin-bottom: 40px;
+  }
+}
+.work .sec-forte {
+  margin-bottom: 90px;
+}
+.work .sec-forte h2 {
+  margin-bottom: 40px;
+}
+.work .sec-forte .container .forte-wrap {
+  position: relative;
+  padding: 25px 0 100px;
+}
+@media (max-width: 768px) {
+  .work .sec-forte .container .forte-wrap {
+    padding-bottom: 60px;
+  }
+}
+.work .sec-forte .container .forte-wrap .back-picture {
+  position: absolute;
+  z-index: -1;
+  background-image: url("../work/img/work-back.jpg");
+  height: 100%;
+  top: 0;
+  width: calc(100% + (100vw - 100%) / 2);
+}
+.work .sec-forte .container .forte-wrap .caption {
+  max-width: 540px;
+}
+.work .sec-forte .container .forte-wrap .img {
+  width: 90%;
+  max-width: 520px;
+  margin: 30px auto 70px;
+  display: block;
+}
+.work .sec-forte .container .forte-wrap .forte-list {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .work .sec-forte .container .forte-wrap .forte-list {
+    display: block;
+  }
+}
+.work .sec-forte .container .forte-wrap .forte-list li {
+  width: 30.5%;
+}
+@media (max-width: 768px) {
+  .work .sec-forte .container .forte-wrap .forte-list li {
+    width: 100%;
+  }
+  .work .sec-forte .container .forte-wrap .forte-list li:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+.work .sec-forte .container .forte-wrap .forte-list li h3 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  position: relative;
+  color: #333;
+  margin-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .work .sec-forte .container .forte-wrap .forte-list li h3 {
+    font-size: 2.4rem;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .work .sec-forte .container .forte-wrap .forte-list li h3 {
+    font-size: 2.2rem;
+  }
+}
+.work .sec-forte .container .forte-wrap .forte-list li h3:after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: var(--main_color);
+  left: 0;
+  bottom: -12px;
+  position: absolute;
+}
+.work .sec-info {
+  margin-bottom: 120px;
+}
+@media (max-width: 768px) {
+  .work .sec-info {
+    margin-bottom: 40px;
+  }
+}
+.work .sec-info h2 {
+  margin-bottom: 0;
+}
+.work .sec-info h3 {
+  margin-top: 70px;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .work .sec-info h3 {
+    font-size: 2.4rem;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .work .sec-info h3 {
+    font-size: 2rem;
+  }
+}
+.work .sec-info ul {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.work .sec-info ul li {
+  width: 100%;
+  max-width: 31%;
+  margin-top: 40px;
+}
+@media (max-width: 1100px) {
+  .work .sec-info ul li {
+    max-width: 46.5%;
+  }
+}
+@media (max-width: 768px) {
+  .work .sec-info ul li {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
+.work .sec-info ul li .plink.plink_type_box {
+  margin-top: 0;
+  height: 60px;
+}/*# sourceMappingURL=page_work.css.map */

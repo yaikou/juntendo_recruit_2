@@ -1,0 +1,128 @@
+# --------------------------------------
+# ファイルパーミッションについて
+# --------------------------------------
+#600 -rw-------  wp-config.php
+#600 -rw-------  readme.html
+#600 -rw-------  readme-ja.html
+#604 -rw----r--  .htaccess
+
+# --------------------------------------
+# メンテナンス画面リダイレクト
+# --------------------------------------
+ErrorDocument 503 /maintenance/index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !^/maintenance/
+  RewriteCond %{REMOTE_ADDR} !=113.37.144.218 #←WAVE大阪オフィス
+  RewriteCond %{REMOTE_ADDR} !=118.22.54.71 #←3ピースラボ
+  RewriteRule ^.*$ - [R=503,L]
+</IfModule>
+
+# --------------------------------------
+# 常時HTTPS
+# --------------------------------------
+RewriteEngine on
+RewriteCond %{HTTPS} !on
+#さくらサーバーではRewriteCond %{HTTPS} !onが効かないので下記を使う
+#RewriteCond %{HTTP:X-SAKURA-FORWARDED-FOR} ^$
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+Header set Strict-Transport-Security "max-age=31536000;"
+
+# --------------------------------------
+# Apache用セキュリティ対策
+# --------------------------------------
+<Files ~ ".*">
+  #-- XSS対策
+  Header always set X-XSS-Protection "1; mode=block"
+  #IEで発生するコンテンツタイプSniffing対策
+  Header always set X-Content-Type-Options: nosniff
+  #-- クリックジャッキング
+  Header always append X-Frame-Options SAMEORIGIN
+  #-- 各種サーバ情報の非表示
+  Header always unset Server
+  Header always unset X-Powered-By
+  Header always unset ETag
+  #-- ファイル一覧を出さない
+  Options -Indexes
+</Files>
+
+# --------------------------------------
+# Wordpress用対策
+# --------------------------------------
+#-- protect wp-login.php
+<files wp-login.php>
+  order deny,allow
+  deny from all
+  allow from ******
+  allow from 113.37.144.218 #waveltd. osaka
+</files>
+
+#-- protect wp-config.php
+<files wp-config.php>
+  order allow,deny
+  deny from all
+</files>
+
+#-- protect xmlrpc.php
+<Files xmlrpc.php>
+  Order allow,deny
+  Deny from all
+</Files>
+
+# --------------------------------------
+# Gzip
+# --------------------------------------
+# スマイルサーバでは無反応
+# CPI公開サーバでは何もしなくてもgzipされている
+# mod_deflate を有効にする
+SetOutputFilter DEFLATE
+# レガシーブラウザは gzip 圧縮を行わない
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+# メディアファイルはgzip圧縮を行わない
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|ico|mp4|webm)$ no-gzip dont-vary
+
+# 下記、さくらサーバ専用（使う場合は下記#をとって上記をコメントアウトする事、動作確認済）
+# ただし非公表の機能らしく不具合でてもサポート外とのこと
+# SetOutputFilter DEFLATE
+# SetEnv force-gzip
+# SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|ico|mp4|webm)$ no-gzip dont-vary
+
+# --------------------------------------
+# その他
+# --------------------------------------
+#-- IEの互換設定
+Header set X-UA-Compatible "IE=Edge"
+<FilesMatch ";\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|xpi|safariextz|vcf)$">
+  Header unset X-UA-Compatible
+</FilesMatch>
+
+#-- ファイル名なしURL時の設定
+DirectoryIndex index.php index.html _index.htm
+
+#-- エラー（404）
+ErrorDocument 404 "/404.html"
+
+#-- 特定の拡張子へのアクセス時にダウンンロードさせる
+<Files ~ "\.(ppt|pptx|doc|docx|xls|xlsx)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</Files>
+
+#-- 許可したIPのみアクセス可
+order deny,allow
+deny from all
+allow from 113.37.144.218 #waveltd. osaka
+
+# --------------------------------------
+# リダイレクト
+# --------------------------------------
+RewriteEngine On
+RewriteBase /
+
+#-- wwwあり統一
+RewriteCond %{HTTP_HOST} ^example\.com [NC]
+RewriteRule ^(.*)$ https://www.example.com/$1 [L,R=301]
