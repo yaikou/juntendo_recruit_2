@@ -26,12 +26,11 @@
 <body class="work">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/recruit/_include/header.html'; ?>
 	<main>
-		<div class="work_mainvisual" id="js-header-observer">
+		<div class="work_mainvisual">
       <picture>
-        <!-- <source srcset="img/top-hero-sp.jpg" media="(max-width: 768px)" /> -->
-        <source srcset="img/work-top.webp" type="image/webp">
-        <source srcset="img/work-top.jpg" type="image/jpg">
-        <img class="img" src="img/work-top.jpg" alt="">
+        <source srcset="./img/work-top.webp" type="image/webp">
+        <source srcset="./img/work-top.jpg" type="image/jpg">
+        <img class="img" src="./img/work-top.jpg" alt="">
       </picture>
       <h1 class="noto-serif caption container">順天堂で働くということ</h1>
 		</div>
@@ -52,10 +51,9 @@
           <div class="back-picture"></div>
           <p class="caption">この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。</p>
           <picture>
-            <!-- <source srcset="img/top-hero-sp.jpg" media="(max-width: 768px)" /> -->
-            <source srcset="img/work-01.webp" type="image/webp">
-            <source srcset="img/work-01.png" type="image/png">
-            <img class="img" src="img/work-01.png" alt="教育、研究、診療・実践">
+            <source srcset="./img/work-01.webp" type="image/webp">
+            <source srcset="./img/work-01.png" type="image/png">
+            <img class="img" src="./img/work-01.png" alt="教育、研究、診療・実践">
           </picture>
           <ul class="forte-list">
             <li>

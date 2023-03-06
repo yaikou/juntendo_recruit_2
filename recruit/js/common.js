@@ -1,4 +1,24 @@
 // ---------------------------------------------
+// タブメニュー
+// ---------------------------------------------
+
+$(document).ready(function () {
+	demo2_clickAction();
+});
+
+function demo2_clickAction() {
+	$('#demo2_headline li').click(function () {
+		$('#demo2_story li').hide();
+		$('#demo2_headline li').removeClass('current');
+		$(this).addClass('current');
+		index = $("#demo2_headline li").index(this) + 1;
+		$('#demo2_story li:nth-child(' + index + ')').removeClass('current');
+		$('#demo2_story li:nth-child(' + index + ')').fadeIn();
+		$('#demo2_story li:nth-child(' + index + ')').addClass('current');
+	});
+}
+
+// ---------------------------------------------
 // スクロールしたら固定ヘッダーのCSSを変える - Intersection Observer
 // ---------------------------------------------
 window.addEventListener('DOMContentLoaded', () => {
