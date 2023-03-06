@@ -86,7 +86,6 @@
 			& > li {
 				position: relative;
 				width: 100%;
-				line-height: 1;
 				margin: 0;
 				padding: 2rem 2.5rem;
 				background: #7e7e7e;
@@ -193,18 +192,37 @@
 		}
 	}
 	.sec-interview {
+		margin-bottom: 7rem;
 		.g-headline {
 			margin-bottom: 2.7rem;
 		}
 		.interviewer-list {
-			.slick-slide {
-  margin: 0;
-}
-
-.slick-current {
-  margin: 0 50px;
-}
+			width: 95%;
+			max-width: 1365px;
+			margin: 0 auto;
+			position: relative;
+			.prev-arrow {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 10px;
+				z-index: 1;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+			}
+			.next-arrow {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 10px;
+				z-index: 1;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+			}
 			.interviewer {
+				margin: 0 calc(6.5rem / 2);
 				> a {
 					position: relative;
 					display: block;
@@ -295,11 +313,104 @@
 					}
 				}
 				@media (max-width: 1100px) {
-				.desc .text {
+					.desc .text {
 						font-size: 1.9rem;
 					}
+				}
 			}
+		}
+	}
+	.sec-about {
+		margin-bottom: 19rem;
+	}
+	.sec-about .container {
+		> a {
+			display: block;
+			position: relative;
+			text-decoration: none;
+			overflow: hidden;
+			transition: all 0.5s ease-out;
+			width: 40%;
+			max-width: 520px;
+			height: auto;
+			margin: 0 auto;
+		}
+		> a:hover > picture > img {
+			transform: scale(1.1);
+			transition: all 0.5s ease-out;
+		}
+		> a > h2 {
+			position: absolute;
+			top: 50%;
+			left: 3rem;
+			transform: translateY(-50%);
+			font-size: 2.6rem;
+			font-weight: 400;
+			letter-spacing: 0.1em;
+			color: #fff;
+			line-height: 1.5;
+			margin: 0;
+		}
+		> a > .r-arrow {
+			position: absolute;
+			top: 50%;
+			right: 4rem;
+			transform: translateY(-50%);
+			width: 1.6rem;
+			height: auto;
+		}
+	}
+	.sec-project {
+		position: relative;
+		margin-bottom: 12rem;
+		.container {
+			position: relative;
+			height: 45rem;
+		}
+		.desc-wrap {
+			position: relative;
+			.bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				width: calc(100% + (100vw - 100% / 2));
+				height: 45rem;
+				background: #efefef;
 			}
+			.desc {
+				width: 35%;
+				padding: 5rem 0 10rem;
+			}
+			.desc .g-headline {
+				margin-bottom: 2.8rem;
+			}
+			.desc > p:last-of-type {
+				margin-bottom: 7.7rem;
+			}
+			.desc .more {
+				float: right;
+				color: #333;
+			}
+			.desc .more i {
+				margin-left: 1rem;
+			}
+			.desc .more i:before {
+				font-size: 1.6rem;
+				color: #333;
+			}
+		}
+		picture {
+			position: absolute;
+			top: -7rem;
+			right: 0;
+			width: 60%;
+			height: 43rem;
+		}
+		picture > img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }

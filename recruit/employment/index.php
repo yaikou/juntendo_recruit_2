@@ -137,73 +137,99 @@
 			<div class="container">
 				<p class="g-headline-treat">Interview</p>
 				<h2 class="g-headline">職員紹介</h2>
-				<ul class="interviewer-list d-flex" id="interview-slider">
-					<li class="interviewer">
-						<a href="">
-							<picture>
-								<source srcset="./img/interview_01.webp" type="image/webp">
-								<source srcset="./img/interview_01.jpg" type="image/jpg">
-								<img class="img" src="./img/interview_01.jpg" alt="">
-							</picture>
-							<div class="desc-mask"></div>
-							<div class="desc d-flex">
-								<p class="text">この文章はダミーです<br>この文章はダミーです</p>
-								<p class="department">企画調査室</p>
-								<p class="name">苗字 名前<span>さん</span></p>
-							</div>
-						</a>
-					</li>
-					<li class="interviewer">
-						<a href="">
-							<picture>
-								<source srcset="./img/interview_02.webp" type="image/webp">
-								<source srcset="./img/interview_02.jpg" type="image/jpg">
-								<img class="img" src="./img/interview_02.jpg" alt="">
-							</picture>
-							<div class="desc-mask"></div>
-							<div class="desc d-flex">
-								<p class="text noto-serif">この文章はダミーです<br>この文章はダミーです</p>
-								<p class="department">財務部</p>
-								<p class="name noto-serif">苗字 名前<span>さん</span></p>
-							</div>
-						</a>
-					</li>
-					<li class="interviewer">
-						<a href="">
-							<picture>
-								<source srcset="./img/interview_03.webp" type="image/webp">
-								<source srcset="./img/interview_03.jpg" type="image/jpg">
-								<img class="img" src="./img/interview_03.jpg" alt="">
-							</picture>
-							<div class="desc-mask"></div>
-							<div class="desc d-flex">
-								<p class="text">この文章はダミーです<br>この文章はダミーです</p>
-								<p class="department">附属病院事務部</p>
-								<p class="name">苗字 名前<span>さん</span></p>
-							</div>
-						</a>
-					<li class="interviewer">
-						<a href="">
-							<picture>
-								<source srcset="./img/interview_02.webp" type="image/webp">
-								<source srcset="./img/interview_02.jpg" type="image/jpg">
-								<img class="img" src="./img/interview_02.jpg" alt="">
-							</picture>
-							<div class="desc-mask"></div>
-							<div class="desc d-flex">
-								<p class="text">この文章はダミーです<br>この文章はダミーです</p>
-								<p class="department">附属病院事務部</p>
-								<p class="name">苗字 名前<span>さん</span></p>
-							</div>
-						</a>
-					</li>
-				</ul>
+			</div>
+			<ul class="interviewer-list d-flex" id="interview-slider">
+				<li class="interviewer">
+					<a href="">
+						<picture>
+							<source srcset="./img/interview_01.webp" type="image/webp">
+							<source srcset="./img/interview_01.jpg" type="image/jpg">
+							<img class="img" src="./img/interview_01.jpg" alt="">
+						</picture>
+						<div class="desc-mask"></div>
+						<div class="desc d-flex">
+							<p class="text">この文章はダミーです<br>この文章はダミーです</p>
+							<p class="department">企画調査室</p>
+							<p class="name">苗字 名前<span>さん</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="interviewer">
+					<a href="">
+						<picture>
+							<source srcset="./img/interview_02.webp" type="image/webp">
+							<source srcset="./img/interview_02.jpg" type="image/jpg">
+							<img class="img" src="./img/interview_02.jpg" alt="">
+						</picture>
+						<div class="desc-mask"></div>
+						<div class="desc d-flex">
+							<p class="text noto-serif">この文章はダミーです<br>この文章はダミーです</p>
+							<p class="department">財務部</p>
+							<p class="name noto-serif">苗字 名前<span>さん</span></p>
+						</div>
+					</a>
+				</li>
+				<li class="interviewer">
+					<a href="">
+						<picture>
+							<source srcset="./img/interview_03.webp" type="image/webp">
+							<source srcset="./img/interview_03.jpg" type="image/jpg">
+							<img class="img" src="./img/interview_03.jpg" alt="">
+						</picture>
+						<div class="desc-mask"></div>
+						<div class="desc d-flex">
+							<p class="text">この文章はダミーです<br>この文章はダミーです</p>
+							<p class="department">附属病院事務部</p>
+							<p class="name">苗字 名前<span>さん</span></p>
+						</div>
+					</a>
+				<li class="interviewer">
+					<a href="">
+						<picture>
+							<source srcset="./img/interview_02.webp" type="image/webp">
+							<source srcset="./img/interview_02.jpg" type="image/jpg">
+							<img class="img" src="./img/interview_02.jpg" alt="">
+						</picture>
+						<div class="desc-mask"></div>
+						<div class="desc d-flex">
+							<p class="text">この文章はダミーです<br>この文章はダミーです</p>
+							<p class="department">附属病院事務部</p>
+							<p class="name">苗字 名前<span>さん</span></p>
+						</div>
+					</a>
+				</li>
+			</ul>
 		</section>
 
-		<section class="sec-info">
+		<section class="sec-about">
 			<div class="container">
-
+				<a href="">
+					<picture>
+						<source srcset="./img/about-management-bg.webp" type="image/webp">
+						<img src="./img/about-management-bg.jpg" alt="">
+					</picture>
+					<h2 class="noto-sans">順天堂の事務総合職について</h2>
+					<img class="r-arrow" src="./img/r-arrow.svg" alt="">
+				</a>
 			</div>
+		</section>
+
+		<section class="sec-project">
+			<div class="container">
+				<div class="desc-wrap">
+					<div class="bg"></div>
+					<div class="desc">
+						<p class="g-headline-treat">Project Story</p>
+						<h2 class="g-headline">仕事を知る</h2>
+						<p>この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。</p>
+						<a href="" class="more barlow">Read more<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<picture>
+				<source srcset="./img/project-bg.webp" type="image/webp">
+				<img class="project-img" src="./img/project-bg.jpg" alt="">
+			</picture>
 		</section>
 	</main>
 
