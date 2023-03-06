@@ -3,18 +3,18 @@
 // ---------------------------------------------
 
 $(document).ready(function () {
-	demo2_clickAction();
+	clickAction();
 });
 
-function demo2_clickAction() {
-	$('#demo2_headline li').click(function () {
-		$('#demo2_story li').hide();
-		$('#demo2_headline li').removeClass('current');
+function clickAction() {
+	$('.headline li').click(function () {
+		$('.desc-list > li').hide();
+		$('.headline li').removeClass('current');
 		$(this).addClass('current');
-		index = $("#demo2_headline li").index(this) + 1;
-		$('#demo2_story li:nth-child(' + index + ')').removeClass('current');
-		$('#demo2_story li:nth-child(' + index + ')').fadeIn();
-		$('#demo2_story li:nth-child(' + index + ')').addClass('current');
+		index = $(".headline li").index(this) + 1;
+		$('.desc-list > li:nth-child(' + index + ')').removeClass('current');
+		$('.desc-list > li:nth-child(' + index + ')').fadeIn();
+		$('.desc-list > li:nth-child(' + index + ')').addClass('current');
 	});
 }
 
@@ -55,6 +55,22 @@ $('#main-slider').each(function () {
 		dots: true,
 		arrows: false,
 		fade: true,
+		lazyLoad: 'progressive',
+	});
+});
+
+$('#interview-slider').each(function () {
+	$(this).slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		speed: 2000,
+		autoplaySpeed: 4000,
+		infinite: true,
+		dots: false,
+		arrows: true,
 		lazyLoad: 'progressive',
 	});
 });

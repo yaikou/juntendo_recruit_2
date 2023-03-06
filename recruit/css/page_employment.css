@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .employment ul {
   list-style: none;
   padding: 0;
@@ -24,13 +25,16 @@
      object-fit: cover;
   max-width: none;
 }
-.employment .employment_mainvisual .caption {
+.employment .employment_mainvisual .caption-wrap {
   position: absolute;
-  font-size: 4.8rem;
-  font-weight: 700;
   left: 0;
   right: 0;
   top: calc(50% - 24px);
+}
+.employment .employment_mainvisual .caption {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 2.8rem;
   line-height: 1;
   color: #fff;
 }
@@ -44,206 +48,265 @@
     font-size: 2.7rem;
   }
 }
-.employment h2 {
+.employment .employment_mainvisual .occupation {
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+.employment .employment_mainvisual h2 {
   font-size: 3.6rem;
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  .employment h2 {
+  .employment .employment_mainvisual h2 {
     font-size: 3.1rem;
   }
 }
 @media (max-width: 500px) {
-  .employment h2 {
+  .employment .employment_mainvisual h2 {
     font-size: 2.6rem;
   }
 }
-.employment .sec-message {
-  margin-bottom: 105px;
+.employment .sec-works {
+  margin-bottom: 12rem;
 }
-@media (max-width: 768px) {
-  .employment .sec-message {
-    margin-bottom: 80px;
-  }
+.employment .sec-works .container h2 {
+  margin-bottom: 6rem;
 }
-.employment .sec-message h2 {
-  margin-bottom: 70px;
-}
-@media (max-width: 768px) {
-  .employment .sec-message h2 {
-    margin-bottom: 40px;
-  }
-}
-.employment .sec-forte {
-  margin-bottom: 90px;
-}
-.employment .sec-forte h2 {
-  margin-bottom: 40px;
-}
-.employment .sec-forte .container .forte-wrap {
+.employment .sec-works .flex-wrapper {
   position: relative;
-  padding: 25px 0 100px;
-}
-@media (max-width: 768px) {
-  .employment .sec-forte .container .forte-wrap {
-    padding-bottom: 60px;
-  }
-}
-.employment .sec-forte .container .forte-wrap .back-picture {
-  position: absolute;
-  z-index: -1;
-  background-image: url("../employment/img/employment-back.jpg");
-  height: 100%;
-  top: 0;
   width: calc(100% + (100vw - 100%) / 2);
+  margin-bottom: 8.8rem;
 }
-.employment .sec-forte .container .forte-wrap .caption {
-  max-width: 540px;
+.employment .sec-works .flex-wrapper .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% + (100vw - 100%) / 2);
+  width: calc(67.2% + (100vw - 100%) / 2);
+  height: 100%;
+  background: linear-gradient(to right, #4f157f 0%, rgba(79, 21, 127, 0.8) 20.44%, rgba(255, 255, 255, 0) 100%);
 }
-.employment .sec-forte .container .forte-wrap .img {
-  width: 90%;
-  max-width: 520px;
-  margin: 30px auto 70px;
+.employment .sec-works .headline {
+  width: 32.8%;
+}
+.employment .sec-works .headline > li {
+  position: relative;
+  width: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 2rem 2.5rem;
+  background: #7e7e7e;
+  color: #fff;
+  cursor: pointer;
+}
+.employment .sec-works .headline > li:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+.employment .sec-works .headline > li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+}
+.employment .sec-works .headline > .current {
+  background: var(--main_color);
+  color: #fff;
+}
+.employment .sec-works .desc-list {
+  width: calc(100vw - 32.8% + (100vw - 100%) / 2);
+  background: url(../employment/img/works-bg.jpg) no-repeat left top/cover;
+}
+.employment .sec-works .desc-list:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+.employment .sec-works .desc-list > li {
+  display: none;
+  color: #fff;
+  padding: 4rem;
+}
+.employment .sec-works .desc-list > .current {
+  position: relative;
   display: block;
 }
-.employment .sec-forte .container .forte-wrap .forte-list {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  .employment .sec-forte .container .forte-wrap .forte-list {
-    display: block;
-  }
-}
-.employment .sec-forte .container .forte-wrap .forte-list li {
-  width: 30.5%;
-}
-@media (max-width: 768px) {
-  .employment .sec-forte .container .forte-wrap .forte-list li {
-    width: 100%;
-  }
-  .employment .sec-forte .container .forte-wrap .forte-list li:not(:last-child) {
-    margin-bottom: 50px;
-  }
-}
-.employment .sec-forte .container .forte-wrap .forte-list li h3 {
-  font-size: 2.6rem;
-  font-weight: 500;
+.employment .sec-works .desc-list > li > p {
   position: relative;
-  color: #333;
-  margin-bottom: 55px;
+  font-size: 2.6rem;
+  margin-bottom: 6rem;
+  line-height: 1;
 }
-@media (max-width: 768px) {
-  .employment .sec-forte .container .forte-wrap .forte-list li h3 {
-    font-size: 2.4rem;
-    margin-bottom: 35px;
-  }
-}
-@media (max-width: 500px) {
-  .employment .sec-forte .container .forte-wrap .forte-list li h3 {
-    font-size: 2.2rem;
-  }
-}
-.employment .sec-forte .container .forte-wrap .forte-list li h3:after {
+.employment .sec-works .desc-list > li > p:before {
   content: "";
-  width: 60px;
-  height: 2px;
-  background-color: var(--main_color);
-  left: 0;
-  bottom: -12px;
   position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 6rem;
+  height: 2px;
+  background: #999;
 }
-.employment .sec-info {
-  margin-bottom: 120px;
+.employment .sec-works .desc-list > li > .desc-list-2 > li {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
 }
-@media (max-width: 768px) {
-  .employment .sec-info {
-    margin-bottom: 40px;
-  }
-}
-.employment .sec-info h2 {
+.employment .sec-works .desc-list > li > .desc-list-2 > li:last-child {
   margin-bottom: 0;
 }
-.employment .sec-info h3 {
-  margin-top: 70px;
-  font-size: 2.8rem;
-  font-weight: 400;
-  margin-bottom: 0;
+.employment .sec-works .desc-list > li > .desc-list-2 > li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  border-radius: 50%;
 }
-@media (max-width: 768px) {
-  .employment .sec-info h3 {
-    font-size: 2.4rem;
-    margin-top: 50px;
-  }
-}
-@media (max-width: 500px) {
-  .employment .sec-info h3 {
-    font-size: 2rem;
-  }
-}
-.employment .sec-info ul {
+.employment .sec-works .link-list {
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-.employment .sec-info ul li {
-  width: 100%;
-  max-width: 31%;
-  margin-top: 40px;
-}
-@media (max-width: 1100px) {
-  .employment .sec-info ul li {
-    max-width: 46.5%;
-  }
+  justify-content: center;
+  gap: 6rem;
 }
 @media (max-width: 768px) {
-  .employment .sec-info ul li {
-    max-width: 100%;
-    margin-top: 30px;
+  .employment .sec-works .link-list {
+    gap: 2rem;
   }
 }
-.employment .sec-info ul li .plink.plink_type_box {
+.employment .sec-works .link-list li {
+  width: 100%;
+  max-width: 36.2%;
+}
+@media (max-width: 768px) {
+  .employment .sec-works .link-list li {
+    max-width: 100%;
+  }
+}
+.employment .sec-works .link-list li .plink.plink_type_box {
   margin-top: 0;
   height: 60px;
 }
-
-ul#demo2_headline {
-  float: left;
-  width: 30%;
-  margin: 10px 0px 0 0;
-  padding: 0;
+.employment .sec-interview .g-headline {
+  margin-bottom: 2.7rem;
 }
-
-ul#demo2_headline li {
-  display: inline-block;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
+.employment .sec-interview .interviewer-list .slick-slide {
   margin: 0;
-  background-color: #AAA;
-  text-align: center;
-  cursor: pointer;
 }
-
-ul#demo2_headline li.current {
-  background-color: #FFF;
+.employment .sec-interview .interviewer-list .slick-current {
+  margin: 0 50px;
 }
-
-ul#demo2_story {
-  float: left;
-  width: 70%;
-  margin: 10px 0 0 0px;
-  padding: 0;
-}
-
-ul#demo2_story li {
-  display: none;
-  vertical-align: top;
-  height: 150px;
-  background-color: #FFF;
-  padding: 5%;
-  z-index: 2;
-}
-
-ul#demo2_story li.current {
+.employment .sec-interview .interviewer-list .interviewer > a {
+  position: relative;
   display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.employment .sec-interview .interviewer-list .interviewer > a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+}
+.employment .sec-interview .interviewer-list .interviewer > a:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.employment .sec-interview .interviewer-list .interviewer .desc-mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 32%;
+  background: var(--main_color);
+  mix-blend-mode: multiply;
+}
+@media (max-width: 1250px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc-mask {
+    height: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc-mask {
+    height: 45%;
+  }
+}
+.employment .sec-interview .interviewer-list .interviewer .desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 32%;
+  padding: 2.5rem;
+}
+@media (max-width: 1250px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc {
+    height: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc {
+    height: 45%;
+  }
+}
+.employment .sec-interview .interviewer-list .interviewer .desc > p {
+  color: #fff;
+}
+.employment .sec-interview .interviewer-list .interviewer .desc .text {
+  margin-bottom: 0;
+  font-size: 2.8rem;
+  line-height: 1.57;
+}
+.employment .sec-interview .interviewer-list .interviewer .desc .department {
+  margin-top: auto;
+  margin-bottom: 7px;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.employment .sec-interview .interviewer-list .interviewer .desc .name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.employment .sec-interview .interviewer-list .interviewer .desc .name span {
+  margin-left: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
+}
+@media (max-width: 1500px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc .text {
+    font-size: 2.2rem;
+  }
+  .employment .sec-interview .interviewer-list .interviewer .desc .department {
+    font-size: 1.3rem;
+  }
+  .employment .sec-interview .interviewer-list .interviewer .desc .name {
+    font-size: 1.6rem;
+  }
+  .employment .sec-interview .interviewer-list .interviewer .desc .name span {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1100px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc .text {
+    font-size: 1.9rem;
+  }
 }/*# sourceMappingURL=page_employment.css.map */
