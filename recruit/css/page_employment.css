@@ -456,7 +456,6 @@
 }
 .employment .sec-project .container {
   position: relative;
-  height: 45rem;
 }
 @media (max-width: 768px) {
   .employment .sec-project .container {
@@ -472,7 +471,7 @@
   left: 0;
   z-index: -1;
   width: calc(100% + 100vw - 50%);
-  height: 45rem;
+  height: 100%;
   background: #efefef;
 }
 @media (max-width: 768px) {
@@ -509,8 +508,8 @@
 .employment .sec-project .project-picture-pc {
   position: absolute;
   top: -7rem;
-  right: 0;
-  width: 60%;
+  left: 40%;
+  width: calc(100% + (100vw - 100%) / 2);
   height: 43rem;
 }
 @media (max-width: 768px) {

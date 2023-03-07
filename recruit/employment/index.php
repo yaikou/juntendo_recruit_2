@@ -248,11 +248,11 @@
 						<a href="" class="more barlow">Read more<i class="fa-sharp fa-solid fa-angle-right"></i></a>
 					</div>
 				</div>
+        <picture class="project-picture-pc">
+          <source srcset="./img/project-bg.webp" type="image/webp">
+          <img class="project-img-pc" src="./img/project-bg.jpg" alt="">
+        </picture>
 			</div>
-			<picture class="project-picture-pc">
-				<source srcset="./img/project-bg.webp" type="image/webp">
-				<img class="project-img-pc" src="./img/project-bg.jpg" alt="">
-			</picture>
 		</section>
 	</main>
 

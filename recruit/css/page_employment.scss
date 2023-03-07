@@ -415,7 +415,6 @@
 		margin-bottom: 12rem;
 		.container {
 			position: relative;
-			height: 45rem;
 			@media (max-width: 768px) {
 				height: auto;
 			}
@@ -428,7 +427,7 @@
 				left: 0;
 				z-index: -1;
 				width: calc(100% + (100vw - 100% / 2));
-				height: 45rem;
+				height: 100%;
 				background: #efefef;
 				@media (max-width: 768px) {
 					height: 100%;
@@ -462,8 +461,8 @@
 		.project-picture-pc {
 			position: absolute;
 			top: -7rem;
-			right: 0;
-			width: 60%;
+			left: 40%;
+			width: calc(100% + (100vw - 100%) / 2);
 			height: 43rem;
 			@media (max-width: 768px) {
 				display: none;
