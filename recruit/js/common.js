@@ -74,6 +74,21 @@ $('#interview-slider').each(function () {
 		prevArrow: '<img src="../employment/img/icon_arrow_l.svg" class="slide-arrow prev-arrow">',
 		nextArrow: '<img src="../employment/img/icon_arrow_r.svg" class="slide-arrow next-arrow">',
 		lazyLoad: 'progressive',
+		responsive: [
+			{
+				breakpoint: 980,
+				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					centerMode: true,
+				},
+			},
+		],
 	});
 });
 
@@ -196,8 +211,8 @@ $(function () {
 	// ---------------------------------------------
 	// scroll-hint
 	// ---------------------------------------------
-	if ($('.table-responsive').length) {
-		new ScrollHint('.table-responsive', {
+	if ($('#js-scroll').length) {
+		new ScrollHint('#js-scroll', {
 			i18n: {
 				scrollable: 'スクロールできます'
 			}

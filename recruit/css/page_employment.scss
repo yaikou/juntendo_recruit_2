@@ -45,44 +45,34 @@
 			line-height: 1;
 			color: #fff;
 		}
-		h2 {
-			font-size: 3.6rem;
-			font-weight: 700;
-			@media (max-width: 768px) {
-				font-size: 3.1rem;
-			}
-			@media (max-width: 500px) {
-				font-size: 2.6rem;
-			}
-		}
 	}
 
 	.sec-works {
 		margin-bottom: 12rem;
 		.container h2 {
+			font-size: 3.6rem;
+			font-weight: 700;
 			margin-bottom: 6rem;
+			// @media (max-width: 768px) {
+			// 	font-size: 3.1rem;
+			// }
+			// @media (max-width: 500px) {
+			// 	font-size: 2.6rem;
+			// }
 		}
 		.flex-wrapper {
 			position: relative;
 			width: calc(100% + (100vw - 100%) / 2);
 			margin-bottom: 8.8rem;
-			.mask {
-				position: absolute;
-				top: 0;
-				right: 0;
+			@media (max-width: 768px) {
 				width: calc(100% + (100vw - 100%) / 2);
-				width: calc(67.2% + (100vw - 100%) / 2);
-				height: 100%;
-				background: linear-gradient(
-					to right,
-					#4f157f 0%,
-					rgba(79, 21, 127, 0.8) 20.44%,
-					rgba(255, 255, 255, 0) 100%
-				);
 			}
 		}
 		.headline {
 			width: 32.8%;
+			@media (max-width: 768px) {
+				flex: 0 0 15rem;
+			}
 			& > li {
 				position: relative;
 				width: 100%;
@@ -91,6 +81,13 @@
 				background: #7e7e7e;
 				color: #fff;
 				cursor: pointer;
+				@media (max-width: 768px) {
+					font-size: 1.4rem;
+					padding: 1.5rem 2rem;
+				}
+			}
+			& > li:not(.current):hover {
+				opacity: 0.5;
 			}
 			& > li:before {
 				content: "";
@@ -114,10 +111,33 @@
 				background: var(--main_color);
 				color: #fff;
 			}
+			& > li > p {
+				position: relative;
+			}
+			& > li > p:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -15px;
+				transform: translateY(-50%);
+				border: 5px solid transparent;
+				border-left: 6px solid #fff;
+				@media (max-width: 768px) {
+					left: -10px;
+				}
+			}
+		}
+		.desc-list-wrapper {
+			width: calc((100vw - 32.8%));
+			height: auto;
+			background: url(../employment/img/works-bg.jpg) no-repeat right top/cover;
+			@media (max-width: 768px) {
+			}
+			width: calc(100% - 15rem);
 		}
 		.desc-list {
-			width: calc(100vw - 32.8% + (100vw - 100%) / 2);
-			background: url(../employment/img/works-bg.jpg) no-repeat left top/cover;
+			width: calc(100% + (100vw - 100%) / 2);
+			height: 100%;
 			&:before {
 				content: "";
 				position: absolute;
@@ -155,6 +175,9 @@
 				position: relative;
 				margin-bottom: 1rem;
 				padding-left: 1.5rem;
+				@media (max-width: 768px) {
+					width: 80rem;
+				}
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -197,10 +220,13 @@
 			margin-bottom: 2.7rem;
 		}
 		.interviewer-list {
-			width: 95%;
+			width: calc(90% + 6.5rem);
 			max-width: 1365px;
 			margin: 0 auto;
 			position: relative;
+			@media (max-width: 980px) {
+				width: 100%;
+			}
 			.prev-arrow {
 				position: absolute;
 				top: 50%;
@@ -254,6 +280,9 @@
 					@media (max-width: 1100px) {
 						height: 45%;
 					}
+					@media (max-width: 980px) {
+						height: 32%;
+					}
 				}
 				.desc {
 					position: absolute;
@@ -268,6 +297,9 @@
 					}
 					@media (max-width: 1100px) {
 						height: 45%;
+					}
+					@media (max-width: 980px) {
+						height: 32%;
 					}
 				}
 				.desc > p {
@@ -366,6 +398,9 @@
 		.container {
 			position: relative;
 			height: 45rem;
+			@media (max-width: 768px) {
+				height: auto;
+			}
 		}
 		.desc-wrap {
 			position: relative;
@@ -377,10 +412,16 @@
 				width: calc(100% + (100vw - 100% / 2));
 				height: 45rem;
 				background: #efefef;
+				@media (max-width: 768px) {
+					height: 100%;
+				}
 			}
 			.desc {
 				width: 35%;
 				padding: 5rem 0 10rem;
+				@media (max-width: 768px) {
+					width: 100%;
+				}
 			}
 			.desc .g-headline {
 				margin-bottom: 2.8rem;
@@ -400,14 +441,36 @@
 				color: #333;
 			}
 		}
-		picture {
+		.project-picture-pc {
 			position: absolute;
 			top: -7rem;
 			right: 0;
 			width: 60%;
 			height: 43rem;
+			@media (max-width: 768px) {
+				display: none;
+			}
 		}
-		picture > img {
+		.project-picture-pc > img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.picture-wrapper {
+			width: 100vw;
+			margin-right: calc(50% - 50vw);
+		}
+		.project-picture-sp {
+			display: none;
+			width: 100%;
+			height: 43rem;
+			margin-bottom: 2.5rem;
+			@media (max-width: 768px) {
+				display: block;
+				height: 20rem;
+			}
+		}
+		.project-picture-sp > img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
