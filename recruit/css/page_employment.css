@@ -97,7 +97,7 @@
 .employment .sec-works .headline > li:not(.current):hover {
   opacity: 0.5;
 }
-.employment .sec-works .headline > li:before {
+.employment .sec-works .headline > li:not(:last-child):before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -143,17 +143,9 @@
   width: calc(100% - 15rem);
 }
 .employment .sec-works .desc-list {
-  width: calc(100% + (100vw - 100%) / 2);
   height: 100%;
-}
-.employment .sec-works .desc-list:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 3px;
-  background: #fff;
+  min-width: 500px;
 }
 .employment .sec-works .desc-list > li {
   display: none;
@@ -182,26 +174,11 @@
 .employment .sec-works .desc-list > li > .desc-list-2 > li {
   position: relative;
   margin-bottom: 1rem;
-  padding-left: 1.5rem;
-}
-@media (max-width: 768px) {
-  .employment .sec-works .desc-list > li > .desc-list-2 > li {
-    width: 80rem;
-  }
+  padding-left: 1em;
+  text-indent: -0.8em;
 }
 .employment .sec-works .desc-list > li > .desc-list-2 > li:last-child {
   margin-bottom: 0;
-}
-.employment .sec-works .desc-list > li > .desc-list-2 > li:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3px;
-  height: 3px;
-  background: #fff;
-  border-radius: 50%;
 }
 .employment .sec-works .link-list {
   flex-wrap: wrap;
@@ -327,6 +304,11 @@
     height: 32%;
   }
 }
+@media (max-width: 450px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc-mask {
+    height: 40%;
+  }
+}
 .employment .sec-interview .interviewer-list .interviewer .desc {
   position: absolute;
   left: 0;
@@ -349,6 +331,11 @@
 @media (max-width: 980px) {
   .employment .sec-interview .interviewer-list .interviewer .desc {
     height: 32%;
+  }
+}
+@media (max-width: 450px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc {
+    height: 40%;
   }
 }
 .employment .sec-interview .interviewer-list .interviewer .desc > p {
@@ -395,6 +382,11 @@
     font-size: 1.9rem;
   }
 }
+@media (max-width: 450px) {
+  .employment .sec-interview .interviewer-list .interviewer .desc .text {
+    font-size: 1.5rem;
+  }
+}
 .employment .sec-about {
   margin-bottom: 19rem;
 }
@@ -404,10 +396,15 @@
   text-decoration: none;
   overflow: hidden;
   transition: all 0.5s ease-out;
-  width: 40%;
+  width: 80%;
   max-width: 520px;
   height: auto;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .employment .sec-about .container > a {
+    width: 100%;
+  }
 }
 .employment .sec-about .container > a:hover > picture > img {
   transform: scale(1.1);
@@ -425,6 +422,16 @@
   line-height: 1.5;
   margin: 0;
 }
+@media (max-width: 600px) {
+  .employment .sec-about .container > a > h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .employment .sec-about .container > a > h2 {
+    font-size: 1.5rem;
+  }
+}
 .employment .sec-about .container > a > .r-arrow {
   position: absolute;
   top: 50%;
@@ -432,6 +439,16 @@
   transform: translateY(-50%);
   width: 1.6rem;
   height: auto;
+}
+@media (max-width: 600px) {
+  .employment .sec-about .container > a > .r-arrow {
+    width: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .employment .sec-about .container > a > .r-arrow {
+    width: 0.8rem;
+  }
 }
 .employment .sec-project {
   position: relative;
