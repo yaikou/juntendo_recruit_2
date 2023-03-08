@@ -178,6 +178,9 @@
 				.plink.plink_type_box {
 					margin-top: 0;
 					height: 60px;
+					&:after {
+						display: none !important;
+					}
 				}
 			}
 		}

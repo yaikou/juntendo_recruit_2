@@ -18,9 +18,9 @@
 	<meta name="robots" content="noindex , nofollow" />
 
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/recruit/_include/header_files.html'; ?>
-	<link rel="stylesheet" href="../css/header.css">
-	<link rel="stylesheet" href="../css/footer.css">
-	<link rel="stylesheet" href="../css/page_employment.css">
+	<link rel="stylesheet" href="../../css/header.css">
+	<link rel="stylesheet" href="../../css/footer.css">
+	<link rel="stylesheet" href="../../css/page_staff_office.css">
 </head>
 
 <body class="employment">

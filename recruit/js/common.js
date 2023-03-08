@@ -71,8 +71,8 @@ $('#interview-slider').each(function () {
 		infinite: true,
 		dots: false,
 		arrows: true,
-		prevArrow: '<img src="../employment/img/icon_arrow_l.svg" class="slide-arrow prev-arrow">',
-		nextArrow: '<img src="../employment/img/icon_arrow_r.svg" class="slide-arrow next-arrow">',
+		prevArrow: '<img src="/recruit/staff/office/img/icon_arrow_l.svg" class="slide-arrow prev-arrow">',
+		nextArrow: '<img src="/recruit/staff/office/img/icon_arrow_r.svg" class="slide-arrow next-arrow">',
 		lazyLoad: 'progressive',
 		responsive: [
 			{

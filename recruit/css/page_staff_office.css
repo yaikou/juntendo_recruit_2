@@ -156,7 +156,7 @@
 .employment .sec-works .desc-list-wrapper {
   width: calc(100vw - 32.8%);
   height: auto;
-  background: url(../employment/img/works-bg.jpg) no-repeat right top/cover;
+  background: url(../staff/office/img/works-bg.jpg) no-repeat right top/cover;
   width: calc(100% - 15rem);
 }
 .employment .sec-works .desc-list {
@@ -591,4 +591,4 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}/*# sourceMappingURL=page_employment.css.map */
+}/*# sourceMappingURL=page_staff_office.css.map */
