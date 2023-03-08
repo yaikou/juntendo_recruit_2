@@ -124,7 +124,7 @@ $(function () {
 	});
   if (location.pathname !== '/recruit/') {
 		$('.g-h').css('background-color', '#fff');
-		$('.g-h .g-nav li a').css('color', '#333');
+		$('.g-h .g-nav li .link').css('color', '#333');
   }
 
 });
