@@ -218,12 +218,15 @@
 					list-style: none;
 					line-height: 1;
 					padding: 19px 10px;
-					a {
+					p {
 						text-decoration: none;
 						padding-left: 20px;
 						display: block;
 						font-weight: 700;
 					}
+          ul{
+            padding-left: 25px;
+          }
 					.external-link {
 						width: 21rem;
 						height: 60px;
@@ -253,6 +256,7 @@
 									-webkit-transition: 0.2s;
 									transition: 0.2s;
 									margin-bottom: 5px;
+                  margin-right: 10px;
 									border: none;
 								}
 							}
@@ -260,7 +264,7 @@
 					}
 				}
 				> ul {
-					li a {
+					li p {
 						&:before {
 							display: inline-block;
 							width: 0;
