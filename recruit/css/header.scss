@@ -26,6 +26,7 @@
 			margin-left: 2.7rem;
 			padding-top: 2.3rem;
 			padding-bottom: 2.3rem;
+
 			@media (max-width: 950px) {
 				width: 21rem;
 				margin-left: 1.2rem;
@@ -79,7 +80,7 @@
 						}
 						.sub-navi {
 							background-color: #fff;
-							width: 25rem;
+							width: 28rem;
 							list-style: none;
 							padding: 18px;
 							transition: 0.2s;
@@ -90,12 +91,12 @@
 									margin-bottom: 0;
 								}
 								a {
-									font-size: 1.2rem;
+									font-size: 1.4rem;
 									font-weight: 500;
 								}
 								i {
 									margin-right: 10px;
-									font-size: 12px;
+									font-size: 1.4rem;
 								}
 							}
 						}
@@ -103,10 +104,12 @@
 				}
 
 				.g-nav-list .g-nav-list__item .link {
-					color: #fff;
 					font-size: 1.5rem;
 					font-weight: 500;
           position: relative;
+          margin-bottom: 0;
+          cursor: pointer;
+          display: inline;
           &:after{
             content:"";
             position: absolute;
