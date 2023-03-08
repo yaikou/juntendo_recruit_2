@@ -209,6 +209,8 @@
   width: 100%;
   padding-top: 110px;
   background-color: #fff;
+  overflow-y: auto;
+  padding-bottom: 60px;
 }
 .g-h .g-h__inner .g-h-contents .r-box #drower-menu ul {
   padding: 0;
