@@ -58,21 +58,24 @@
     font-size: 2.6rem;
   }
 }
-.work .sec-message {
-  margin-bottom: 105px;
+.work section {
+  margin-bottom: 130px;
 }
 @media (max-width: 768px) {
-  .work .sec-message {
+  .work section {
     margin-bottom: 80px;
   }
 }
-.work .sec-message h2 {
-  margin-bottom: 70px;
+.work section h2 {
+  margin-bottom: 40px;
 }
-@media (max-width: 768px) {
-  .work .sec-message h2 {
-    margin-bottom: 40px;
-  }
+.work .sec-message ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding-left: 1em;
+}
+.work .sec-message ul li {
+  list-style-type: disc;
 }
 .work .sec-forte {
   margin-bottom: 90px;

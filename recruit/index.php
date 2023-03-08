@@ -133,7 +133,7 @@
 						<p class="g-headline-treat">About Juntendo</p>
 						<h2 class="g-headline">順天堂について</h2>
 					</div>
-					<a class="external-link" href="" target="_blank" rel="noopener noreferrer">
+					<a class="external-link" href="https://www.juntendo.ac.jp/corp/history/" target="_blank" rel="noopener noreferrer">
 						<picture>
 							<source srcset="./img/top__about-banner.webp" type="image/webp">
 							<img class="banner" src="./img/top__about-banner.jpg" alt="180 YEARS HISTORY JUNTENDO 人在りて、我在り。">
@@ -149,8 +149,15 @@
 					</picture>
 					<div class="desc">
 						<h3 class="noto-serif">本学で働くということ</h3>
-						<p>この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。</p>
-						<a href="" class="more barlow">Read more<i class="fa-sharp fa-solid fa-angle-right"></i></a>
+						<p>順天堂は、1838年に学祖・佐藤泰然が開設したオ
+							ランダ医学塾「和田塾」に端を発し、今につながる
+							日本最古の医学教育機関です。<br>現在では、医学部・
+							スポーツ健康科学部・医療看護学部・保健看護学
+							部・国際教養学部・保健医療学部・医療科学部の７
+							学部をはじめ、大学院３研究科、医学部附属６病院
+							を有する「健康総合大学・大学院大学」へと発展を
+							遂げています。</p>
+						<a href="/recruit/work/" class="more barlow">Read more<i class="fa-sharp fa-solid fa-angle-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -161,12 +168,12 @@
 				<div class="bg"></div>
 				<p class="g-headline-treat">Recruit</p>
 				<h2 class="g-headline">採用情報</h2>
-				<p class="desc">この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。</p>
+				<p class="desc">順天堂大学は健康総合大学・大学院大学として、「教育」「研究」「診療・実践」という３つの柱を通じた国際レベルでの社会貢献と人材育成に取り組んでいます。<br>変革する時代に職種を超えて協働し“健康を支える”人材を募集しています。</p>
 				<section class="sec-job-info">
 					<h3 class="noto-serif">学校法人 順天堂</h3>
 					<ul class="d-flex">
 						<li>
-							<a href="">
+							<a href="/recruit/teacher/">
 								<picture>
 									<source srcset="./img/top__recruit-img01.webp" type="image/webp">
 									<img src="./img/top__recruit-img01.jpg" alt="">
@@ -176,7 +183,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/recruit/staff/nurse/">
 								<picture>
 									<source srcset="./img/top__recruit-img02.webp" type="image/webp">
 									<img src="./img/top__recruit-img02.jpg" alt="">
@@ -186,7 +193,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/recruit/staff/medicaltechnical/">
 								<picture>
 									<source srcset="./img/top__recruit-img03.webp" type="image/webp">
 									<img src="./img/top__recruit-img03.jpg" alt="">
@@ -196,7 +203,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/recruit/staff/office/">
 								<picture>
 									<source srcset="./img/top__recruit-img04.webp" type="image/webp">
 									<img src="./img/top__recruit-img04.jpg" alt="">
@@ -206,7 +213,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/recruit/staff/other/">
 								<picture>
 									<source srcset="./img/top__recruit-img05.webp" type="image/webp">
 									<img src="./img/top__recruit-img05.jpg" alt="">
@@ -216,7 +223,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/recruit/staff/disability/">
 								<picture>
 									<source srcset="./img/top__recruit-img06.webp" type="image/webp">
 									<img src="./img/top__recruit-img06.jpg" alt="">
@@ -231,7 +238,7 @@
 					<h3 class="noto-serif">附属病院採用情報</h3>
 					<ul class="d-flex">
 						<li>
-							<a href="">
+							<a class="link" href="https://www.juntendo.ac.jp/hospital/concerned/recruit/" target="_blank" rel="noopener noreferrer">
 								<picture>
 									<source srcset="./img/top__recruit-hospital_juntendo.webp" type="image/webp">
 									<img src="./img/top__recruit-hospital_juntendo.jpg" alt="">
@@ -241,7 +248,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="link" href="https://www.hosp-shizuoka.juntendo.ac.jp/recruit/" target="_blank" rel="noopener noreferrer">
 								<picture>
 									<source srcset="./img/top__recruit-hospital_shizuoka.webp" type="image/webp">
 									<img src="./img/top__recruit-hospital_shizuoka.jpg" alt="">
@@ -251,7 +258,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="link" href="https://www.hosp-urayasu.juntendo.ac.jp/recruit/" target="_blank" rel="noopener noreferrer">
 								<picture>
 									<source srcset="./img/top__recruit-hospital_urayasu.webp" type="image/webp">
 									<img src="./img/top__recruit-hospital_urayasu.jpg" alt="">
@@ -261,7 +268,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="link" href="https://hosp-koshigaya.juntendo.ac.jp/recruit/" target="_blank" rel="noopener noreferrer">
 								<picture>
 									<source srcset="./img/top__recruit-hospital_koshigaya.webp" type="image/webp">
 									<img src="./img/top__recruit-hospital_koshigaya.jpg" alt="">
@@ -271,7 +278,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="link" href="https://hosp-gmc.juntendo.ac.jp/recruit/" target="_blank" rel="noopener noreferrer">
 								<picture>
 									<source srcset="./img/top__recruit-hospital_juntendo.webp" type="image/webp">
 									<img src="./img/top__recruit-hospital_juntendo.jpg" alt="">
@@ -281,7 +288,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="link" href="https://hosp-nerima.juntendo.ac.jp/recruit/" target="_blank" rel="noopener noreferrer">
 								<picture>
 									<source srcset="./img/top__recruit-hospital_nerima.webp" type="image/webp">
 									<img src="./img/top__recruit-hospital_nerima.jpg" alt="">

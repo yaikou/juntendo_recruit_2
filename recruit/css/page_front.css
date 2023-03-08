@@ -321,11 +321,11 @@
 
 .sec-recruit {
   position: relative;
-  margin-bottom: 28.7rem;
+  margin-bottom: 12rem;
 }
 @media (max-width: 768.98px) {
   .sec-recruit {
-    margin-bottom: 11rem;
+    margin-bottom: 8rem;
   }
 }
 .sec-recruit .bottom-layer {
