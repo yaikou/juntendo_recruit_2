@@ -72,9 +72,9 @@
   --breakpoint-md: 769px;
   --breakpoint-lg: 1000px;
   --breakpoint-xl: 1367px;
-  --font-family-sans-serif: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-  	"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-  	Verdana, Roboto, "Droid Sans", sans-serif;
+  --font-family-sans-serif: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+  	"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+  	"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   	"Liberation Mono", "Courier New", monospace;
 }
@@ -33426,7 +33426,6 @@ body.home .g-header .gnav {
 
 @media (min-width: 769px) {
   .contents {
-    min-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 120px;
@@ -38626,10 +38625,26 @@ p + .pblock_col_ptn2,
   font-size: 1.8rem;
 }
 .pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__head .pcollapse__toggle {
+  position: relative;
   padding-right: 2em;
 }
 .pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__head .pcollapse__toggle::after {
   right: 0;
+  font-weight: normal;
+  font-size: 2.2rem;
+  transition: all 0s !important;
+  color: currentColor;
+  font-family: fontawesome;
+  content: "＋";
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  transition: 0.2s;
 }
 .pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__body > .pcollapse__content {
   padding-bottom: 60px;
@@ -38651,4 +38666,16 @@ p + .pblock_col_ptn2,
 .pcollapse-all {
   content: "全てを表示する";
 }
+.pcollapse-all:before {
+  color: currentColor;
+  font-family: fontawesome;
+  content: "＋";
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 0.5em;
+  transition: 0.2s;
+  order: 2;
+}
+
 /*# sourceMappingURL=style.css.map */

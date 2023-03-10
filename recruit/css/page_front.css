@@ -388,9 +388,17 @@
 .sec-recruit .bottom-layer .sec-job-info ul li a {
   display: block;
   position: relative;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   overflow: hidden;
   transition: all 0.5s ease-out;
+}
+.sec-recruit .bottom-layer .sec-job-info ul li > a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sec-recruit .bottom-layer .sec-job-info ul li > a:hover > picture > img {
   transform: scale(1.1);

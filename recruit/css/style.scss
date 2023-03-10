@@ -72,9 +72,9 @@
 	--breakpoint-md: 769px;
 	--breakpoint-lg: 1000px;
 	--breakpoint-xl: 1367px;
-	--font-family-sans-serif: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		Verdana, Roboto, "Droid Sans", sans-serif;
+	--font-family-sans-serif: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 		"Liberation Mono", "Courier New", monospace;
 }
@@ -108,9 +108,9 @@ section {
 
 body {
 	margin: 0;
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.7;
@@ -6660,9 +6660,9 @@ a.close.disabled {
 	z-index: 1070;
 	display: block;
 	margin: 0;
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.7;
@@ -6776,9 +6776,9 @@ a.close.disabled {
 	z-index: 1060;
 	display: block;
 	max-width: 276px;
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.7;
@@ -31694,9 +31694,9 @@ h5.ttl__style_3 {
 	border-radius: 0;
 }
 .pagination .page-link {
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 	color: #000;
 }
 @media (min-width: 576px) {
@@ -33007,9 +33007,9 @@ h5.ttl__style_3 {
 }
 
 .ff__gothic {
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "Yu Gothic Medium",
-		"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-		Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
+		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 }
 
 .ff__mincho {
@@ -34721,7 +34721,7 @@ body.home .g-header .gnav {
 }
 @media (min-width: 769px) {
 	.contents {
-		min-width: 1200px;
+		// min-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 120px;
@@ -40113,93 +40113,124 @@ p + .pblock_col_ptn2,
 // アコーディオン
 
 .pcollapse {
-  &__toggle {
-    display: block;
-    color: #4f157f;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 0.5em 0;
-    padding-right: 3em;
-    // @include after_arrow(right, plus_slim);
-    cursor: pointer;
-    &::after{
-      font-weight: normal;
-      font-size: 2.2rem;
-      transition: all 0s !important;
-    }
-    &[aria-expanded="true"] {
-      // @include after_arrow(right, minus_slim);
-      &::after{
-        font-size: 2.0rem;
-      }
-    }
-    &:hover {
-      // @include nohover();
-    }
-  }
+	&__toggle {
+		display: block;
+		color: #4f157f;
+		text-decoration: none;
+		font-size: 1.6rem;
+		font-weight: bold;
+		padding: 0.5em 0;
+		padding-right: 3em;
+		// @include after_arrow(right, plus_slim);
+		cursor: pointer;
+		&::after {
+			font-weight: normal;
+			font-size: 2.2rem;
+			transition: all 0s !important;
+		}
+		&[aria-expanded="true"] {
+			// @include after_arrow(right, minus_slim);
+			&::after {
+				font-size: 2rem;
+			}
+		}
+		&:hover {
+			// @include nohover();
+		}
+	}
 
-  &__content {
-    padding: 0.5em 0 1em;
-  }
-  &#{&}_t1 {
-    margin-bottom: 0;
-    > .pcollapse {
-      &__box{
+	&__content {
+		padding: 0.5em 0 1em;
+	}
+	&#{&}_t1 {
+		margin-bottom: 0;
+		> .pcollapse {
+			&__box {
+				> .pcollapse {
+					&__head {
+						// border-top: 1px solid #666666;
+						color: #ff0000;
+						border-bottom: 1px solid #4f157f;
+						font-size: 1.8rem;
+						.pcollapse__toggle {
+							position: relative;
+							padding-right: 2em;
+							&::after {
+								right: 0;
+								font-weight: normal;
+								font-size: 2.2rem;
+								-webkit-transition: all 0s !important;
+								transition: all 0s !important;
+								color: currentColor;
+								font-family: fontawesome;
+								content: "＋";
+								font-family: "Noto Sans JP", sans-serif;
+								font-weight: 400;
+								display: inline-block;
+								position: absolute;
+								z-index: 1;
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								transform: translateY(-50%);
+								right: 20px;
+								-webkit-transition: 0.2s;
+								transition: 0.2s;
+							}
+						}
+					}
+					&__body {
+						> .pcollapse__content {
+							padding-bottom: 60px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&#{&}_t2 {
+		.pcollapse {
+			&__toggle {
+				padding: 0.5em 15px;
+				padding-right: 3em;
+			}
+			&__head {
+				// color: $color-white;
+				// background: $color-base-main;
+				background: #aaaaaa;
+				margin-bottom: 10px;
+			}
+			&__body {
+				> .pcollapse__content {
+					margin-bottom: 40px;
+				}
+			}
+			&__content {
+				padding: 0;
+			}
+		}
+	}
 
-        > .pcollapse {
-          &__head {
-            // border-top: 1px solid #666666;
-            color:#ff0000;
-            border-bottom: 1px solid #4f157f;
-            font-size: 1.8rem;
-            .pcollapse__toggle {
-              padding-right: 2em;
-              &::after{
-                right:0;
-              }
-            }
-          }
-          &__body {
-            > .pcollapse__content{
-              padding-bottom: 60px;
-            }
-          }
-        }
-      }
-    }
-  }
-  &#{&}_t2 {
-    .pcollapse {
-
-      &__toggle {
-        padding: 0.5em 15px;
-        padding-right: 3em;
-      }
-      &__head {
-        // color: $color-white;
-        // background: $color-base-main;
-        background: #aaaaaa;
-        margin-bottom: 10px;
-      }
-      &__body {
-        > .pcollapse__content{
-          margin-bottom: 40px;
-        }
-      }
-      &__content {
-        padding: 0;
-      }
-    }
-  }
-
-  &-all{
-    content:'全てを表示する';
-    // @include after_arrow_inline(right, plus_slim);
-    &#{&}_close{
-      // @include after_arrow_inline(right, minus_slim);
-    }
-  }
+	&-all {
+		content: "全てを表示する";
+		// @include after_arrow_inline(right, plus_slim);
+		&#{&}_close {
+			// @include after_arrow_inline(right, minus_slim);
+		}
+		&:before {
+			color: currentColor;
+			font-family: fontawesome;
+			content: "＋";
+			font-family: "Noto Sans JP", sans-serif;
+			font-weight: 400;
+			display: inline-block;
+			margin-left: 0.5em;
+			-webkit-transition: 0.2s;
+			transition: 0.2s;
+			-webkit-box-ordinal-group: 3;
+			-ms-flex-order: 2;
+			order: 2;
+		}
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
