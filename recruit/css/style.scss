@@ -40225,6 +40225,45 @@ p + .pblock_col_ptn2,
 			&__toggle {
 				padding: 0.5em 15px;
 				padding-right: 3em;
+        position: relative;
+        &:after{
+          right: 0;
+          font-weight: normal;
+          font-size: 2.2rem;
+          -webkit-transition: all 0s !important;
+          transition: all 0s !important;
+          color: currentColor;
+          font-family: fontawesome;
+          content: "＋";
+          font-family: "Noto Sans JP", sans-serif;
+          font-weight: 400;
+          display: inline-block;
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          right:20px;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: 0.2s;
+          transition: 0.2s;
+        }
+        &.active::after {
+          color: currentColor;
+          font-family: fontawesome;
+          content: "ー";
+          font-family: "Noto Sans JP", sans-serif;
+          font-weight: 400;
+          display: inline-block;
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          right:20px;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-transition: 0.2s;
+          transition: 0.2s;
+          transition: all 0s !important;
+        }
 			}
 			&__head {
 				// color: $color-white;

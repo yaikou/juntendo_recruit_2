@@ -38686,6 +38686,40 @@ p + .pblock_col_ptn2,
 .pcollapse.pcollapse_t2 .pcollapse__toggle {
   padding: 0.5em 15px;
   padding-right: 3em;
+  position: relative;
+}
+.pcollapse.pcollapse_t2 .pcollapse__toggle:after {
+  right: 0;
+  font-weight: normal;
+  font-size: 2.2rem;
+  transition: all 0s !important;
+  color: currentColor;
+  font-family: fontawesome;
+  content: "＋";
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: 0.2s;
+}
+.pcollapse.pcollapse_t2 .pcollapse__toggle.active::after {
+  color: currentColor;
+  font-family: fontawesome;
+  content: "ー";
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  transition: all 0s !important;
 }
 .pcollapse.pcollapse_t2 .pcollapse__head {
   background: #efefef;
