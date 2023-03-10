@@ -14,6 +14,7 @@
 	header
 	<hr>
 	<div class="container">
+    <main class="contents">
 		<h1>見出しレベル1</h1>
 		<h2>見出しレベル2</h2>
 		<h3>見出しレベル3</h3>
@@ -224,9 +225,110 @@
 				</tbody>
 			</table>
 		</div>
+    <p></p>
+    <!-- <div class="accordion"> -->
+      <p class="text-right"><a class="plink plink_type_inline pcollapse-all" data-target=".editor__main .pcollapse__body:not(.show)" role="button" aria-expanded="false">全てを表示する</a></p>
+      <dl class="pcollapse pcollapse_t1">
+        <div class="pcollapse__box">
+          <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります見出しが入ります見出しが入ります見出しが入ります見出しが入ります見出しが入ります見出しが入ります見出しが入ります見出しが入ります</a></dt>
+          <dd class="pcollapse__body collapse">
+
+            <div class="pcollapse__content">
+
+              <dl class="pcollapse pcollapse_t2">
+                <div class="pcollapse__box">
+                  <dt class="pcollapse__head"><a class="pcollapse__toggle"
+                      data-toggle="collapse">アコーディオン内アコーディオンアコーディオン内アコーディオンアコーディオン内アコーディオンアコーディオン内アコーディオン</a></dt>
+                  <dd class="pcollapse__body collapse">
+                    <div class="pcollapse__content">
+                      <p>
+                        この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+                      </p>
+                    </div>
+                  </dd>
+                </div>
+                <div class="pcollapse__box">
+                  <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります</a>
+                  </dt>
+                  <dd class="pcollapse__body collapse">
+                    <div class="pcollapse__content">
+                      <p>
+                        この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+                      </p>
+                    </div>
+                  </dd>
+                </div>
+                <div class="pcollapse__box">
+                  <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります</a>
+                  </dt>
+                  <dd class="pcollapse__body collapse">
+                    <div class="pcollapse__content">
+                      <p>
+                        この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+                      </p>
+                    </div>
+                  </dd>
+                </div>
+                <div class="pcollapse__box">
+                  <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります</a>
+                  </dt>
+                  <dd class="pcollapse__body collapse">
+                    <div class="pcollapse__content">
+                      <p>
+                        この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+                      </p>
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </dd>
+        </div>
+      </dl>
+    <!-- </div> -->
+    <p></p>
+    <dl class="pcollapse pcollapse_t1">
+      <div class="pcollapse__box">
+        <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります</a></dt>
+        <dd class="pcollapse__body collapse">
+          <div class="pcollapse__content">
+            <p>
+              この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+            </p>
+          </div>
+        </dd>
+      </div>
+    </dl>
+    <p></p>
+    <dl class="pcollapse pcollapse_t1">
+      <div class="pcollapse__box">
+        <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります</a></dt>
+        <dd class="pcollapse__body collapse">
+          <div class="pcollapse__content">
+            <p>
+              この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+            </p>
+          </div>
+        </dd>
+      </div>
+    </dl>
+    <p></p>
+    <dl class="pcollapse pcollapse_t1">
+      <div class="pcollapse__box">
+        <dt class="pcollapse__head"><a class="pcollapse__toggle" data-toggle="collapse">見出しが入ります</a></dt>
+        <dd class="pcollapse__body collapse">
+          <div class="pcollapse__content">
+            <p>
+              この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。この文章は文字サイズや文字量を把握するための目安として使用しているダミーテキストです。制作物の内容とは一切異なります制作物の内容とは一切異なります。
+            </p>
+          </div>
+        </dd>
+      </div>
+    </dl>
+  </main>
 	</div>
 	<hr>
 	footer
 </body>
-
+<script src="/js/common.js"></script>
 </html>

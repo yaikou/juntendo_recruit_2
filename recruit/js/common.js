@@ -128,6 +128,53 @@ $(function () {
   }
 
 });
+
+// ---------------------------------------------
+// アコーディオンの開閉イベント補完
+// ---------------------------------------------
+$(function () {
+  $('.contents').on('click', '.pcollapse__toggle', function () {
+    if (!$(this).attr('href')) {
+      var _target = $(this).parent('.pcollapse__head').next('.pcollapse__body');
+      $(_target).collapse('toggle');
+      if ($(this).attr('aria-expanded') === 'true') {
+        $(this).attr('aria-expanded', false);
+      } else {
+        $(this).attr('aria-expanded', true);
+        if ($(this).hasClass('pcollapse-only')) {
+          $('.editor__main .pcollapse__toggle').not(this).each(function (i, this2) {
+            if ($(this2).attr('aria-expanded') === 'true') {
+              var _target2 = $(this2).parent('.pcollapse__head').next('.pcollapse__body');
+              _target2.collapse('toggle');
+              $(this2).attr('aria-expanded', false);
+            }
+          });
+        }
+      }
+    }
+
+  });
+  $('.pcollapse-all').on('click', function () {
+
+    if ($(this).attr('aria-expanded') === 'true') {
+      $($(this).attr('data-target')).collapse('toggle');
+      $(this).attr('aria-expanded', false);
+      $('.editor__main .pcollapse__toggle').attr('aria-expanded', false);
+      $('.pcollapse-all').attr('data-target', '.editor__main .pcollapse__body:not(.show)');
+      $('.pcollapse-all').removeClass('pcollapse-all_close');
+      $('.pcollapse-all').text('全てを表示する');
+    } else {
+      $($(this).attr('data-target')).collapse('toggle');
+      $(this).attr('aria-expanded', true);
+      $('.editor__main .pcollapse__toggle').attr('aria-expanded', true);
+      $('.pcollapse-all').attr('data-target', '.editor__main .pcollapse__body.show');
+      $('.pcollapse-all').addClass('pcollapse-all_close');
+      $('.pcollapse-all').text('全てを閉じる');
+    }
+    return false;
+  });
+});
+
 //スムーススクロール
 $(function () {
 	// #で始まるa要素をクリックした場合に処理（"#"←ダブルクォーテンションで囲むのを忘れずに。忘れるとjQueryのバージョンによっては動かない。。）
