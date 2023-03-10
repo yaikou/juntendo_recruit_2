@@ -5,16 +5,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport">
 	<title>parts｜[new] 順天堂大学医師会｜順天堂大学</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css"> -->
 	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lcyzs_2g5Io9VmuUtwDh0eNjMdclfmQ7YAKSg4j6rAXop6h5ZbFl0Je-J1KY5B9IiCEhSVv90rOyf-9PVfEcGFY5KJjlPtZ8iMW-imZMgCs" charset="UTF-8"></script>
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/recruit/_include/header_files.html'; ?>
 </head>
 
 <body class="parts">
 	header
 	<hr>
 	<main class="contents">
-	<div class="container">
+		<div class="container">
 			<h1>見出しレベル1</h1>
 			<h2>見出しレベル2</h2>
 			<h3>見出しレベル3</h3>
@@ -325,11 +326,12 @@
 				</div>
 			</dl>
 			<p></p>
-	</div>
-	<hr>
-	footer
+		</div>
+		<hr>
+		footer
 	</main>
 </body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/recruit/_include/footer_files.html'; ?>
 <!-- <script src="/js/common.js"></script> -->
+
 </html>

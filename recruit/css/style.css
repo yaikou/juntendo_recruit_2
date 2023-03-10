@@ -38595,9 +38595,29 @@ p + .pblock_col_ptn2,
   min-width: 1080px;
 }
 
+.ptitle_t1:not(:first-child), .ptitle_t1_s:not(:first-child) {
+  margin-top: 120px;
+}
+
+.ptitle_t1, .ptitle_t1_s {
+  margin-bottom: 60px;
+}
+
+.ptitle_t1, .ptitle_t1_s {
+  font-size: 3.6rem;
+}
+
+.ptitle_t1, .ptitle_t1_s {
+  font-family: "Noto Serif JP", YuMincho, "游明朝", "Hiragino Mincho ProN", "ヒラギノ明朝 W3 JIS2004", "Sawarabi Mincho", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
 .pcollapse__toggle {
   display: block;
-  color: #4f157f;
+  color: #333;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: bold;
@@ -38627,6 +38647,7 @@ p + .pblock_col_ptn2,
 .pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__head .pcollapse__toggle {
   position: relative;
   padding-right: 2em;
+  color: #4F157F;
 }
 .pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__head .pcollapse__toggle::after {
   right: 0;
@@ -38643,8 +38664,21 @@ p + .pblock_col_ptn2,
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  right: 20px;
   transition: 0.2s;
+}
+.pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__head .pcollapse__toggle.active::after {
+  color: currentColor;
+  font-family: fontawesome;
+  content: "ー";
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  transition: all 0s !important;
 }
 .pcollapse.pcollapse_t1 > .pcollapse__box > .pcollapse__body > .pcollapse__content {
   padding-bottom: 60px;
@@ -38654,7 +38688,7 @@ p + .pblock_col_ptn2,
   padding-right: 3em;
 }
 .pcollapse.pcollapse_t2 .pcollapse__head {
-  background: #aaaaaa;
+  background: #efefef;
   margin-bottom: 10px;
 }
 .pcollapse.pcollapse_t2 .pcollapse__body > .pcollapse__content {
@@ -38676,6 +38710,16 @@ p + .pblock_col_ptn2,
   margin-left: 0.5em;
   transition: 0.2s;
   order: 2;
+}
+.pcollapse-all.pcollapse-all_close:before {
+  color: currentColor;
+  font-family: fontawesome;
+  content: "ー";
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 0.5em;
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=style.css.map */

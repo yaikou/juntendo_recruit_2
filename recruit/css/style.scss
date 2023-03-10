@@ -40111,11 +40111,27 @@ p + .pblock_col_ptn2,
 }
 
 // アコーディオン
+.ptitle_t1:not(:first-child), .ptitle_t1_s:not(:first-child) {
+	margin-top: 120px;
+}
+.ptitle_t1, .ptitle_t1_s {
+	margin-bottom: 60px;
+}
+.ptitle_t1, .ptitle_t1_s {
+	font-size: 3.6rem;
+}
+.ptitle_t1, .ptitle_t1_s {
+	font-family: "Noto Serif JP", YuMincho, "游明朝", "Hiragino Mincho ProN", "ヒラギノ明朝 W3 JIS2004", "Sawarabi Mincho", "Times New Roman", Times, serif;
+	font-weight: 400;
+	font-weight: bold;
+	line-height: 1.6;
+	letter-spacing: -0.01em;
+}
 
 .pcollapse {
 	&__toggle {
 		display: block;
-		color: #4f157f;
+		color: #333;
 		text-decoration: none;
 		font-size: 1.6rem;
 		font-weight: bold;
@@ -40155,6 +40171,7 @@ p + .pblock_col_ptn2,
 						.pcollapse__toggle {
 							position: relative;
 							padding-right: 2em;
+							color: #4F157F;
 							&::after {
 								right: 0;
 								font-weight: normal;
@@ -40172,10 +40189,26 @@ p + .pblock_col_ptn2,
 								top: 50%;
 								-webkit-transform: translateY(-50%);
 								transform: translateY(-50%);
-								right: 20px;
 								-webkit-transition: 0.2s;
 								transition: 0.2s;
 							}
+							&.active::after {
+								color: currentColor;
+								font-family: fontawesome;
+								content: "ー";
+								font-family: "Noto Sans JP", sans-serif;
+								font-weight: 400;
+								display: inline-block;
+								position: absolute;
+								z-index: 1;
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								transform: translateY(-50%);
+								-webkit-transition: 0.2s;
+								transition: 0.2s;
+								transition: all 0s !important;
+							}
+
 						}
 					}
 					&__body {
@@ -40196,7 +40229,7 @@ p + .pblock_col_ptn2,
 			&__head {
 				// color: $color-white;
 				// background: $color-base-main;
-				background: #aaaaaa;
+				background: #efefef;
 				margin-bottom: 10px;
 			}
 			&__body {
@@ -40230,6 +40263,17 @@ p + .pblock_col_ptn2,
 			-ms-flex-order: 2;
 			order: 2;
 		}
+	}
+	&-all.pcollapse-all_close:before {
+    color: currentColor;
+    font-family: fontawesome;
+    content: "ー";
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 0.5em;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 	}
 }
 
