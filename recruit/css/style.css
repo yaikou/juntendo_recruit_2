@@ -108,7 +108,7 @@ section {
 body {
   margin: 0;
   font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, "Yu Gothic", 游ゴシック, YuGothic, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.7;
   color: #333;
@@ -30426,10 +30426,6 @@ a.text-dark:focus {
   margin-bottom: 15px;
 }
 
-.row.gutters-y20 {
-  margin-bottom: -20px;
-}
-
 .row.gutters-y20 > .col,
 .row.gutters-y20 > [class*=col-] {
   margin-bottom: 20px;
@@ -32333,7 +32329,7 @@ html {
 body {
   width: 100%;
   font-feature-settings: "palt";
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #333;
   background-color: #fff;
   overflow-x: hidden;
@@ -35414,13 +35410,6 @@ p + .pblock_col_ptn2,
   background: #fff;
 }
 
-@media (max-width: 768.98px) {
-  .plink.plink_type_box {
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 .plink.plink_type_box:hover {
   /* color: currentColor; */
   text-decoration: none;
@@ -35477,8 +35466,15 @@ p + .pblock_col_ptn2,
   transform: translate(0, -50%);
 }
 
+.plink.plink_type_box_underline::before {
+  right: 10px;
+}
+
 @media (min-width: 769px) {
   .plink.plink_type_box_arrow_rr:hover::before {
+    transform: translate(10px, -50%);
+  }
+  .plink.plink_type_box_underline:hover::before {
     transform: translate(10px, -50%);
   }
 }
@@ -38705,9 +38701,13 @@ p + .pblock_col_ptn2,
   .ptitle_t4 {
     padding-bottom: 10px;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
+.ptitle_t1 + .ptitle_t4, .ptitle_t1_s + .ptitle_t4 {
+  margin-top: 0;
+}
+
 /* アコーディオンパーツ */
 .pcollapse__toggle {
   display: block;

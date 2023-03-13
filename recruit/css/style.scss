@@ -112,7 +112,7 @@ body {
 		"Yu Gothic", 游ゴシック, YuGothic, "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
 		"Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Verdana, Roboto, "Droid Sans",
 		sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 	line-height: 1.7;
 	color: #333;
@@ -31429,9 +31429,9 @@ a.text-dark:focus {
 	margin-bottom: 15px;
 }
 
-.row.gutters-y20 {
-	margin-bottom: -20px;
-}
+// .row.gutters-y20 {
+// 	margin-bottom: -20px;
+// }
 .row.gutters-y20 > .col,
 .row.gutters-y20 > [class*="col-"] {
 	margin-bottom: 20px;
@@ -33262,7 +33262,7 @@ body {
 	width: 100%;
 	-webkit-font-feature-settings: "palt";
 	font-feature-settings: "palt";
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	color: #333;
 	background-color: #fff;
 	overflow-x: hidden;
@@ -36763,13 +36763,13 @@ p + .pblock_col_ptn2,
 // 		margin-top: 60px;
 // 	}
 // }
-@media (max-width: 768.98px) {
-	.plink.plink_type_box {
-		margin-top: 30px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
+// @media (max-width: 768.98px) {
+// 	.plink.plink_type_box {
+// 		margin-top: 30px;
+// 		margin-right: auto;
+// 		margin-left: auto;
+// 	}
+// }
 .plink.plink_type_box:hover {
 	/* color: currentColor; */
 	text-decoration: none;
@@ -36827,11 +36827,18 @@ p + .pblock_col_ptn2,
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
+.plink.plink_type_box_underline::before{
+	right:10px;
+}
 @media (min-width: 769px) {
 	.plink.plink_type_box_arrow_rr:hover::before {
 		-webkit-transform: translate(10px, -50%);
 		transform: translate(10px, -50%);
 	}
+	.plink.plink_type_box_underline:hover::before{
+	-webkit-transform: translate(10px, -50%);
+		transform: translate(10px, -50%);
+}
 }
 .plink.plink_type_box_flip {
 	border: 2px solid #4f157f;
@@ -40140,6 +40147,8 @@ p + .pblock_col_ptn2,
 .ptitle_t1_s + .ptitle_t4 {
 	margin-top: 0;
 }
+
+
 .ptitle_t4:not(:first-child) {
 	margin-top: 60px;
 }
@@ -40150,6 +40159,27 @@ p + .pblock_col_ptn2,
 	font-weight: bold;
 	border-bottom: 1px solid currentColor;
 }
+
+// .plink.plink_type_box_underline.plink_type_box_arrow_rr[href^="mailto:"]::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".pdf"]::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".doc"]::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".docx"]::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".xls"]::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".xlsx"]::before {
+//     right: 10px;
+// }
+// .plink.plink_type_box_underline.plink_type_box_arrow_rr[href^="mailto:"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".pdf"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".doc"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".docx"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".xls"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".xlsx"]:hover::before {
+//     -webkit-transform: translate(10px, -50%);
+//     transform: translate(10px, -50%);
+// }
+// .plink.plink_type_box_underline.plink_type_box_arrow_rr::after {
+//     right: 10px;
+// }
+// .plink.plink_type_box_arrow_rr:hover::after {
+//     -webkit-transform: translate(10px, -50%);
+//     transform: translate(10px, -50%);
+// }
+// .plink.plink_type_box_underline.plink_type_box_arrow_rr[target="_blank"]::before {
+//     right: 10px;
+// }
+// .plink.plink_type_box[target="_blank"]:hover::before {
+//     transform: translate(10px, -50%);
+// }
 
 @media (max-width: 767.98px) {
 	.ptitle_t1:not(:first-child),
@@ -40167,8 +40197,22 @@ p + .pblock_col_ptn2,
 	.ptitle_t4 {
 		padding-bottom: 10px;
 		margin-bottom: 20px;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
+// 	.plink.plink_type_box, .plink.plink_type_box_med, .plink.plink_type_box_hss, .plink.plink_type_box_nurs, .plink.plink_type_box_hsn, .plink.plink_type_box_ila, .plink.plink_type_box_hs, .plink.plink_type_box_ms, .plink.plink_type_box_hds, .plink.plink_type_box_grad, .plink.plink_type_box_base {
+//     -ms-flex-wrap: wrap;
+//     flex-wrap: wrap;
+//     margin-bottom: 0;
+// }
+// .plink.plink_type_box {
+//     margin-top: 0;
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+
+}
+.ptitle_t1 + .ptitle_t4, .ptitle_t1_s + .ptitle_t4 {
+    margin-top: 0;
 }
 
 /* アコーディオンパーツ */
