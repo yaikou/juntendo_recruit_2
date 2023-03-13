@@ -129,7 +129,7 @@
 				<div class="box"><img class="table" src="https://placehold.jp/960x720.jpg?text=image" alt="dummy"></div>
 			</div>
       <p></p>
-			<div class="table-responsive scroll-hint" style="position: relative; overflow: auto;">
+			<div class="table-responsive scroll-hint" id="js-scroll" style="position: relative; overflow: auto;">
 				<table class="ptable tbl__style_1 ptable_w800" style="border-collapse: collapse; width: 100%; height: 199px;">
 					<thead>
 						<tr style="height: 39px;">
@@ -181,7 +181,7 @@
 
 			</div>
       <p></p>
-			<div class="table-responsive scroll-hint" style="position: relative; overflow: auto;">
+			<div class="table-responsive scroll-hint" id="js-scroll" style="position: relative; overflow: auto;">
 				<table class="ptable tbl__style_1 ptable_w800">
 					<thead>
 						<tr>
@@ -350,7 +350,7 @@
 
 			<h2 class="ptitle_t1">表組</h2>
 			<h3 class="ptitle_t4">SPスクロールあり</h3>
-			<div class="table-responsive w-sp-800px scroll-hint">
+			<div class="table-responsive w-sp-800px scroll-hint" id="js-scroll">
 				<table class="ptable">
 					<thead>
 						<tr>
