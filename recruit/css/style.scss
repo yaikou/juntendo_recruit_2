@@ -108,7 +108,10 @@ section {
 
 body {
 	margin: 0;
-	font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, "Yu Gothic", 游ゴシック, YuGothic, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体,
+		"Yu Gothic", 游ゴシック, YuGothic, "Noto Sans JP", "ヒラギノ角ゴ ProN W3",
+		"Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Verdana, Roboto, "Droid Sans",
+		sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.7;
@@ -36806,6 +36809,8 @@ p + .pblock_col_ptn2,
 	-ms-flex-align: center;
 	align-items: center;
 	text-decoration: none;
+	padding-right: 35px;
+	z-index: 1;
 }
 .plink.plink_type_box_arrow_rr::before {
 	position: absolute;
@@ -40109,35 +40114,6 @@ p + .pblock_col_ptn2,
 }
 
 /* 標準ボタンパーツ */
-.ptitle_t1 + .ptitle_t4, .ptitle_t1_s + .ptitle_t4 {
-    margin-top: 0;
-}
-.ptitle_t4:not(:first-child) {
-			margin-top: 60px;
-	}
-	.ptitle_t4 {
-    padding-bottom: 10px;
-		margin-bottom: 20px;
-		font-size: 1.8rem;
-		font-weight: bold;
-    border-bottom: 1px solid currentColor;
-	}
-	.ptitle_t4 {
-}
-@media (min-width: 767.98px) {
-	.ptitle_t4:not(:first-child) {
-    margin-top: 60px;
-}
-.ptitle_t4 {
-    padding-bottom: 10px;
-		margin-bottom: 20px;
-		font-size: 1.8rem;
-
-}
-
-}
-
-/* アコーディオンパーツ */
 .ptitle_t1:not(:first-child),
 .ptitle_t1_s:not(:first-child) {
 	margin-top: 120px;
@@ -40160,6 +40136,42 @@ p + .pblock_col_ptn2,
 	line-height: 1.6;
 	letter-spacing: -0.01em;
 }
+.ptitle_t1 + .ptitle_t4,
+.ptitle_t1_s + .ptitle_t4 {
+	margin-top: 0;
+}
+.ptitle_t4:not(:first-child) {
+	margin-top: 60px;
+}
+.ptitle_t4 {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	border-bottom: 1px solid currentColor;
+}
+
+@media (max-width: 767.98px) {
+	.ptitle_t1:not(:first-child),
+	.ptitle_t1_s:not(:first-child) {
+		margin-top: 90px;
+	}
+	.ptitle_t1,
+	.ptitle_t1_s {
+		margin-bottom: 40px;
+		font-size: 2.8rem;
+	}
+	.ptitle_t4:not(:first-child) {
+		margin-top: 60px;
+	}
+	.ptitle_t4 {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		font-size: 1.8rem;
+	}
+}
+
+/* アコーディオンパーツ */
 
 .pcollapse {
 	&__toggle {
