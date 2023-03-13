@@ -462,52 +462,27 @@
 			</div>
 			<p></p>
 
-			<div class="pbox pbox_t1 pblock_col_ptn1">
-				<p class="ptitle_t5_main">コラムタイトル</p>
-				<div class="pbox__head">
-					<h4 class="ptitle_t4">見出しが入ります。見出しが入ります。</h4>
-				</div>
-				<div class="pbox__body">
-					<div class="row gutters-y20 gutters-x30 pblock_col_ptn2">
-						<div class="col-md-8">
-							<p>
-								この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。
-							</p>
-						</div>
-						<div class="col-md-4">
-							<figure>
-								<img src="https://placehold.jp/800x600.png?text=IMG" alt="" width="800" height="600">
-								<figcaption>キャプション</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p></p>
-
-			<div class="pbox pbox_t2 pblock_col_ptn1">
-				<p class="ptitle_t5_main">コラムタイトル</p>
-				<div class="pbox__head">
-					<h4 class="ptitle_t4">見出しが入ります。見出しが入ります。</h4>
-				</div>
-				<div class="pbox__body">
-					<div class="row gutters-y20 gutters-x30 pblock_col_ptn2">
-						<div class="col-md-8">
-							<p>
-								この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。
-							</p>
-						</div>
-						<div class="col-md-4">
-							<figure>
-								<img src="https://placehold.jp/800x600.png?text=IMG" alt="" width="800" height="600">
-								<figcaption>キャプション</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p></p>
-
+      <div class="pbox pbox_t2 pblock_col_ptn1">
+        <p class="ptitle_t5_main">コラムタイトル</p>
+        <div class="pbox__head">
+          <h4 class="ptitle_t4">見出しが入ります。見出しが入ります。</h4>
+        </div>
+        <div class="pbox__body">
+          <div class="row gutters-y20 gutters-x30 pblock_col_ptn2">
+            <div class="col-md-8">
+              <p>
+                この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。
+              </p>
+            </div>
+            <div class="col-md-4">
+              <figure>
+                <img src="https://placehold.jp/800x600.png?text=IMG" alt="" width="800" height="600">
+                <figcaption>キャプション</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
 		</div>
 		<hr>
 		footer
