@@ -128,6 +128,7 @@
 				<h4 class="g-h-4">基本プログラム</h4>
 				<div class="box"><img class="table" src="https://placehold.jp/960x720.jpg?text=image" alt="dummy"></div>
 			</div>
+      <p></p>
 			<div class="table-responsive scroll-hint" style="position: relative; overflow: auto;">
 				<table class="ptable tbl__style_1 ptable_w800" style="border-collapse: collapse; width: 100%; height: 199px;">
 					<thead>
@@ -179,7 +180,7 @@
 				</table>
 
 			</div>
-
+      <p></p>
 			<div class="table-responsive scroll-hint" style="position: relative; overflow: auto;">
 				<table class="ptable tbl__style_1 ptable_w800">
 					<thead>
@@ -224,7 +225,7 @@
 					</tbody>
 				</table>
 			</div>
-
+      <p></p>
 			<h2 class="ptitle_t1">ボタン</h2>
 			<h3 class="ptitle_t4">標準ボタン</h3>
 			<div class="row row-cols-1 row-cols-md-2 gutters-x60 pblock_col_ptn3">
@@ -349,7 +350,7 @@
 
 			<h2 class="ptitle_t1">表組</h2>
 			<h3 class="ptitle_t4">SPスクロールあり</h3>
-			<div class="table-responsive w-sp-800px">
+			<div class="table-responsive w-sp-800px scroll-hint">
 				<table class="ptable">
 					<thead>
 						<tr>

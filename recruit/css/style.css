@@ -39170,4 +39170,113 @@ p + .pblock_col_ptn2, .pblock_col_ptn2 + .pblock_col_ptn2 {
     font-size: 1.6rem;
   }
 }
+
+.ptitle_t3 {
+  margin-top: 0;
+  font-weight: normal;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.ptitle_t3:not(:first-child) {
+  margin-top: 90px;
+}
+@media (min-width: 768px) {
+  .ptitle_t3 {
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+}
+.ptitle_t3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 2px;
+  background-color: var(--theme_main, #4F157F);
+  bottom: 0;
+  left: 0;
+}
+
+.plist.plist_type_disc {
+  list-style: disc;
+  padding-left: 25px;
+}
+.plist.plist_type_disc .plist__item {
+  margin: 0;
+  line-height: 2;
+}
+
+.plink.plink_type_box_underline.plink_type_box_arrow_lr {
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid #d3d3d3;
+  padding-left: 20px;
+  padding-top: 1.3em;
+}
+
+.pblock_col_ptn1 p {
+  line-height: 2;
+}
+
+.plink.plink_type_box_underline.plink_type_box_arrow_lr::before {
+  left: 0;
+  color: var(--theme_main, #4F157F);
+  font-family: fontawesome;
+  content: "\f0da";
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: 0.2s;
+}
+.plink.plink_type_box_underline.plink_type_box_arrow_lr:hover {
+  opacity: 1;
+}
+.plink.plink_type_box_underline.plink_type_box_arrow_lr:hover::before {
+  transform: translate(10px, -50%);
+}
+
+.scroll-hint .ptable {
+  min-width: 800px;
+}
+
+.ptable {
+  margin: 0;
+  border-collapse: collapse;
+}
+.ptable th {
+  padding: 0.7rem;
+  text-align: center;
+  border: 1px solid #d3d3d3 !important;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+.ptable th.main {
+  color: #fff;
+  background: var(--theme_main, #4F157F);
+}
+.ptable td {
+  line-height: 2;
+  padding: 0.7rem;
+  border: 1px solid #d3d3d3;
+  letter-spacing: 0.06em;
+}
+.ptable thead th {
+  text-align: center;
+  color: #fff;
+  background: var(--theme_main, #4F157F);
+  border: 1px solid #d3d3d3 !important;
+}
+
+small, .small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */
