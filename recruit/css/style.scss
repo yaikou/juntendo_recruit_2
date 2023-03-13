@@ -108,9 +108,7 @@ section {
 
 body {
 	margin: 0;
-	font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic,
-		"Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
-		"メイリオ", Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, "Yu Gothic", 游ゴシック, YuGothic, "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Verdana, Roboto, "Droid Sans", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.7;
@@ -36757,11 +36755,11 @@ p + .pblock_col_ptn2,
 	border: 1px solid #222;
 	background: #fff;
 }
-@media (min-width: 769px) {
-	.plink.plink_type_box {
-		margin-top: 60px;
-	}
-}
+// @media (min-width: 769px) {
+// 	.plink.plink_type_box {
+// 		margin-top: 60px;
+// 	}
+// }
 @media (max-width: 768.98px) {
 	.plink.plink_type_box {
 		margin-top: 30px;
@@ -40110,18 +40108,53 @@ p + .pblock_col_ptn2,
 	min-width: 1080px;
 }
 
-// アコーディオン
-.ptitle_t1:not(:first-child), .ptitle_t1_s:not(:first-child) {
+/* 標準ボタンパーツ */
+.ptitle_t1 + .ptitle_t4, .ptitle_t1_s + .ptitle_t4 {
+    margin-top: 0;
+}
+.ptitle_t4:not(:first-child) {
+			margin-top: 60px;
+	}
+	.ptitle_t4 {
+    padding-bottom: 10px;
+		margin-bottom: 20px;
+		font-size: 1.8rem;
+		font-weight: bold;
+    border-bottom: 1px solid currentColor;
+	}
+	.ptitle_t4 {
+}
+@media (min-width: 767.98px) {
+	.ptitle_t4:not(:first-child) {
+    margin-top: 60px;
+}
+.ptitle_t4 {
+    padding-bottom: 10px;
+		margin-bottom: 20px;
+		font-size: 1.8rem;
+
+}
+
+}
+
+/* アコーディオンパーツ */
+.ptitle_t1:not(:first-child),
+.ptitle_t1_s:not(:first-child) {
 	margin-top: 120px;
 }
-.ptitle_t1, .ptitle_t1_s {
+.ptitle_t1,
+.ptitle_t1_s {
 	margin-bottom: 60px;
 }
-.ptitle_t1, .ptitle_t1_s {
+.ptitle_t1,
+.ptitle_t1_s {
 	font-size: 3.6rem;
 }
-.ptitle_t1, .ptitle_t1_s {
-	font-family: "Noto Serif JP", YuMincho, "游明朝", "Hiragino Mincho ProN", "ヒラギノ明朝 W3 JIS2004", "Sawarabi Mincho", "Times New Roman", Times, serif;
+.ptitle_t1,
+.ptitle_t1_s {
+	font-family: "Noto Serif JP", YuMincho, "游明朝", "Hiragino Mincho ProN",
+		"ヒラギノ明朝 W3 JIS2004", "Sawarabi Mincho", "Times New Roman", Times,
+		serif;
 	font-weight: 400;
 	font-weight: bold;
 	line-height: 1.6;
@@ -40171,7 +40204,7 @@ p + .pblock_col_ptn2,
 						.pcollapse__toggle {
 							position: relative;
 							padding-right: 2em;
-							color: #4F157F;
+							color: #4f157f;
 							&::after {
 								right: 0;
 								font-weight: normal;
@@ -40208,7 +40241,6 @@ p + .pblock_col_ptn2,
 								transition: 0.2s;
 								transition: all 0s !important;
 							}
-
 						}
 					}
 					&__body {
@@ -40225,45 +40257,45 @@ p + .pblock_col_ptn2,
 			&__toggle {
 				padding: 0.5em 15px;
 				padding-right: 3em;
-        position: relative;
-        &:after{
-          right: 0;
-          font-weight: normal;
-          font-size: 2.2rem;
-          -webkit-transition: all 0s !important;
-          transition: all 0s !important;
-          color: currentColor;
-          font-family: fontawesome;
-          content: "＋";
-          font-family: "Noto Sans JP", sans-serif;
-          font-weight: 400;
-          display: inline-block;
-          position: absolute;
-          z-index: 1;
-          top: 50%;
-          right:20px;
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          -webkit-transition: 0.2s;
-          transition: 0.2s;
-        }
-        &.active::after {
-          color: currentColor;
-          font-family: fontawesome;
-          content: "ー";
-          font-family: "Noto Sans JP", sans-serif;
-          font-weight: 400;
-          display: inline-block;
-          position: absolute;
-          z-index: 1;
-          top: 50%;
-          right:20px;
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          -webkit-transition: 0.2s;
-          transition: 0.2s;
-          transition: all 0s !important;
-        }
+				position: relative;
+				&:after {
+					right: 0;
+					font-weight: normal;
+					font-size: 2.2rem;
+					-webkit-transition: all 0s !important;
+					transition: all 0s !important;
+					color: currentColor;
+					font-family: fontawesome;
+					content: "＋";
+					font-family: "Noto Sans JP", sans-serif;
+					font-weight: 400;
+					display: inline-block;
+					position: absolute;
+					z-index: 1;
+					top: 50%;
+					right: 20px;
+					-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+					-webkit-transition: 0.2s;
+					transition: 0.2s;
+				}
+				&.active::after {
+					color: currentColor;
+					font-family: fontawesome;
+					content: "ー";
+					font-family: "Noto Sans JP", sans-serif;
+					font-weight: 400;
+					display: inline-block;
+					position: absolute;
+					z-index: 1;
+					top: 50%;
+					right: 20px;
+					-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+					-webkit-transition: 0.2s;
+					transition: 0.2s;
+					transition: all 0s !important;
+				}
 			}
 			&__head {
 				// color: $color-white;
@@ -40304,15 +40336,15 @@ p + .pblock_col_ptn2,
 		}
 	}
 	&-all.pcollapse-all_close:before {
-    color: currentColor;
-    font-family: fontawesome;
-    content: "ー";
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
-    display: inline-block;
-    margin-left: 0.5em;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+		color: currentColor;
+		font-family: fontawesome;
+		content: "ー";
+		font-family: "Noto Sans JP", sans-serif;
+		font-weight: 400;
+		display: inline-block;
+		margin-left: 0.5em;
+		-webkit-transition: 0.2s;
+		transition: 0.2s;
 	}
 }
 

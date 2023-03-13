@@ -1,3 +1,6 @@
+// ---------------------------------------------
+// アコーディオン（パーツ集）
+// ---------------------------------------------
 $('.pcollapse-all').on('click', function () {
 
 	if ($(this).attr('aria-expanded') === 'true') {
@@ -103,7 +106,6 @@ window.addEventListener('DOMContentLoaded', () => {
     // IntersectionObserverをインスタンス化&実行
     const observer = new IntersectionObserver(doWhenIntersect, {});
 		observer.observe(elmIntersect);
-
   }
 });
 

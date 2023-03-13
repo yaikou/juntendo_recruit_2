@@ -4,9 +4,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport">
-	<title>parts｜[new] 順天堂大学医師会｜順天堂大学</title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/style.css"> -->
+	<title>parts｜[new] 順天堂大学採用サイト｜順天堂大学</title>
 	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lcyzs_2g5Io9VmuUtwDh0eNjMdclfmQ7YAKSg4j6rAXop6h5ZbFl0Je-J1KY5B9IiCEhSVv90rOyf-9PVfEcGFY5KJjlPtZ8iMW-imZMgCs" charset="UTF-8"></script>
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/recruit/_include/header_files.html'; ?>
 </head>
@@ -226,6 +224,28 @@
 					</tbody>
 				</table>
 			</div>
+
+			<h2 class="ptitle_t1">ボタン</h2>
+			<h3 class="ptitle_t4">標準ボタン</h3>
+			<div class="row row-cols-1 row-cols-md-2 gutters-x60 pblock_col_ptn3">
+				<div class="col">
+					<a class="plink plink_type_box plink_type_box_arrow_rr plink_type_box_underline" href="#">標準ボタン</a>
+				</div>
+				<div class="col">
+					<a class="plink plink_type_box plink_type_box_arrow_rr plink_type_box_underline" href="#" target="_blank" rel="noopener noreferrer">標準ボタン</a>
+				</div>
+			</div>
+			<p></p>
+			<div class="row row-cols-1 row-cols-md-2 gutters-x60 pblock_col_ptn3">
+				<div class="col">
+					<a class="plink plink_type_box plink_type_box_arrow_rr plink_type_box_underline" href="test.pdf">標準ボタン</a>
+				</div>
+				<div class="col">
+					<a class="plink plink_type_box plink_type_box_arrow_rr plink_type_box_underline" href="#" target="_blank" rel="noopener noreferrer">標準ボタン</a>
+				</div>
+			</div>
+			<p></p>
+
 			<h2 class="ptitle_t1" id="anc01">アコーディオン</h2>
 			<p></p>
 			<p class="text-right"><a class="plink plink_type_inline pcollapse-all" data-target=".editor__main .pcollapse__body:not(.show)" role="button" aria-expanded="false">全てを表示する</a></p>
@@ -326,12 +346,173 @@
 				</div>
 			</dl>
 			<p></p>
+
+			<h2 class="ptitle_t1">表組</h2>
+			<h3 class="ptitle_t4">SPスクロールあり</h3>
+			<div class="table-responsive w-sp-800px">
+				<table class="ptable">
+					<thead>
+						<tr>
+							<th>タイトル</th>
+							<th>内容</th>
+							<th>カテゴリ</th>
+							<th>金額<small>(円)</small></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="main">表側</th>
+							<td>内容内容内容内容内容内容内容内容</td>
+							<td style="text-align: center;">カテゴリ</td>
+							<td style="text-align: right;">1,000</td>
+						</tr>
+						<tr>
+							<th class="main">表側</th>
+							<td>内容内容</td>
+							<td style="text-align: center;">カテゴリ</td>
+							<td style="text-align: right;">1,000</td>
+						</tr>
+						<tr>
+							<th class="main">表側</th>
+							<td>内容内容</td>
+							<td style="text-align: center;">カテゴリ</td>
+							<td style="text-align: right;">1,000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p></p>
+
+			<h3 class="ptitle_t4">SPスクロールなし</h3>
+			<table class="ptable">
+				<thead>
+					<tr>
+						<th>内容</th>
+						<th>内容</th>
+						<th>カテゴリ</th>
+						<th>金額<small>(円)</small></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>内容内容</td>
+						<td>内容内容</td>
+						<td style="text-align: center;">カテゴリ</td>
+						<td style="text-align: right;">1,000</td>
+					</tr>
+					<tr>
+						<td>内容内容</td>
+						<td>内容内容</td>
+						<td style="text-align: center;">カテゴリ</td>
+						<td style="text-align: right;">1,000</td>
+					</tr>
+					<tr>
+						<td>内容内容</td>
+						<td>内容内容</td>
+						<td style="text-align: center;">カテゴリ</td>
+						<td style="text-align: right;">1,000</td>
+					</tr>
+				</tbody>
+			</table>
+			<p></p>
+
+			<h2 class="ptitle_t1">カラムパターン</h2>
+			<h3 class="ptitle_t3">2カラム（SP段落ち余白なし）</h3>
+			<div class="row row-cols-1 row-cols-md-2 gutters-x60">
+				<div class="col">
+					<ul class="plist plist_type_disc">
+						<li class="plist__item">テキストテキスト</li>
+						<li class="plist__item">テキストテキスト</li>
+						<li class="plist__item">テキストテキスト</li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul class="plist plist_type_disc">
+						<li class="plist__item">テキストテキスト</li>
+						<li class="plist__item">テキストテキスト</li>
+						<li class="plist__item">テキストテキスト</li>
+					</ul>
+				</div>
+			</div>
+			<p></p>
+
+			<h3 class="ptitle_t3">2カラム（余白あり）</h3>
+			<div class="row row-cols-1 row-cols-md-2 gutters-x60 gutters-y20 pblock_col_ptn1">
+				<div class="col">
+					<p>
+						この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。
+					</p>
+					<p><a class="plink plink_type_box plink_type_box_arrow_lr plink_type_box_underline" href="#">コラム内ボタン</a>
+					</p>
+				</div>
+				<div class="col">
+					<img src="https://placehold.jp/800x600.png?text=IMG" alt="" width="800" height="600">
+				</div>
+			</div>
+			<p></p>
+
+			<div class="row row-cols-1 row-cols-md-2 gutters-x60 gutters-y20 pblock_col_ptn1">
+				<div class="col">
+					<h4 class="ptitle_t1">見出し1が入ります<br>見出し1が入ります</h4>
+					<p>肩書<br><span class="font-weight-bold ff__mincho fz__large_200">山田 太郎</span> さん</p>
+				</div>
+				<div class="col">
+					<img src="https://placehold.jp/600x600.png?text=IMG" alt="" width="600" height="600">
+				</div>
+			</div>
+			<p></p>
+
+			<div class="pbox pbox_t1 pblock_col_ptn1">
+				<p class="ptitle_t5_main">コラムタイトル</p>
+				<div class="pbox__head">
+					<h4 class="ptitle_t4">見出しが入ります。見出しが入ります。</h4>
+				</div>
+				<div class="pbox__body">
+					<div class="row gutters-y20 gutters-x30 pblock_col_ptn2">
+						<div class="col-md-8">
+							<p>
+								この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。
+							</p>
+						</div>
+						<div class="col-md-4">
+							<figure>
+								<img src="https://placehold.jp/800x600.png?text=IMG" alt="" width="800" height="600">
+								<figcaption>キャプション</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p></p>
+
+			<div class="pbox pbox_t2 pblock_col_ptn1">
+				<p class="ptitle_t5_main">コラムタイトル</p>
+				<div class="pbox__head">
+					<h4 class="ptitle_t4">見出しが入ります。見出しが入ります。</h4>
+				</div>
+				<div class="pbox__body">
+					<div class="row gutters-y20 gutters-x30 pblock_col_ptn2">
+						<div class="col-md-8">
+							<p>
+								この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。この文章はダミーで、文字の量やサイズを把握する為のものです。
+							</p>
+						</div>
+						<div class="col-md-4">
+							<figure>
+								<img src="https://placehold.jp/800x600.png?text=IMG" alt="" width="800" height="600">
+								<figcaption>キャプション</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p></p>
+
 		</div>
 		<hr>
 		footer
 	</main>
 </body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/recruit/_include/footer_files.html'; ?>
-<!-- <script src="/js/common.js"></script> -->
 
 </html>
