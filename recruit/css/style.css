@@ -38685,6 +38685,27 @@ p + .pblock_col_ptn2,
   border-bottom: 1px solid currentColor;
 }
 
+.plink.plink_type_box_underline:hover {
+  background: transparent;
+  color: currentColor;
+}
+
+.plink.plink_type_box_arrow_rr:hover::before {
+  transform: translate(10px, -50%);
+}
+
+.plink.plink_type_box:hover, .plink.plink_type_box_flip, .plink.plink_type_box_flip_med, .plink.plink_type_box_flip_hss, .plink.plink_type_box_flip_nurs, .plink.plink_type_box_flip_hsn, .plink.plink_type_box_flip_ila, .plink.plink_type_box_flip_hs, .plink.plink_type_box_flip_ms, .plink.plink_type_box_flip_hds, .plink.plink_type_box_flip_grad, .plink.plink_type_box_flip_base, .plink.plink_type_box_med:hover, .plink.plink_type_box_hss:hover, .plink.plink_type_box_nurs:hover, .plink.plink_type_box_hsn:hover, .plink.plink_type_box_ila:hover, .plink.plink_type_box_hs:hover, .plink.plink_type_box_ms:hover, .plink.plink_type_box_hds:hover, .plink.plink_type_box_grad:hover, .plink.plink_type_box_base:hover {
+  opacity: 1;
+}
+
+.plink.plink_type_box_underline.plink_type_box_arrow_rr[href^="mailto:"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".pdf"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".doc"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".docx"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".xls"]:hover::before, .plink.plink_type_box_underline.plink_type_box_arrow_rr[href*=".xlsx"]:hover::before {
+  transform: translate(10px, -50%);
+}
+
+.plink.plink_type_box[target=_blank]:hover::before, .plink.plink_type_box_flip[target=_blank]::before, .plink.plink_type_box_flip_med[target=_blank]::before, .plink.plink_type_box_flip_hss[target=_blank]::before, .plink.plink_type_box_flip_nurs[target=_blank]::before, .plink.plink_type_box_flip_hsn[target=_blank]::before, .plink.plink_type_box_flip_ila[target=_blank]::before, .plink.plink_type_box_flip_hs[target=_blank]::before, .plink.plink_type_box_flip_ms[target=_blank]::before, .plink.plink_type_box_flip_hds[target=_blank]::before, .plink.plink_type_box_flip_grad[target=_blank]::before, .plink.plink_type_box_flip_base[target=_blank]::before, .plink.plink_type_box_med[target=_blank]:hover::before, .plink.plink_type_box_hss[target=_blank]:hover::before, .plink.plink_type_box_nurs[target=_blank]:hover::before, .plink.plink_type_box_hsn[target=_blank]:hover::before, .plink.plink_type_box_ila[target=_blank]:hover::before, .plink.plink_type_box_hs[target=_blank]:hover::before, .plink.plink_type_box_ms[target=_blank]:hover::before, .plink.plink_type_box_hds[target=_blank]:hover::before, .plink.plink_type_box_grad[target=_blank]:hover::before, .plink.plink_type_box_base[target=_blank]:hover::before {
+  transform: translate(10px, -50%);
+}
+
 @media (max-width: 767.98px) {
   .ptitle_t1:not(:first-child),
   .ptitle_t1_s:not(:first-child) {
