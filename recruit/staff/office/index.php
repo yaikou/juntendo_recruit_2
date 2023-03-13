@@ -220,7 +220,7 @@
 
 		<section class="sec-about">
 			<div class="container">
-				<a href="https://www.juntendo.ac.jp/corp/recruit/staff/office/about">
+				<a href="https://www.juntendo.ac.jp/recruit/staff/office/about">
 					<picture>
 						<source srcset="./img/about-management-bg.webp" type="image/webp">
 						<img src="./img/about-management-bg.jpg" alt="">
