@@ -78,14 +78,16 @@
   }
 }
 .employment .sec-works .flex-wrapper {
+  display: flex;
   position: relative;
   width: calc(100% + (100vw - 100%) / 2);
   margin-bottom: 8.8rem;
 }
 @media (max-width: 768px) {
   .employment .sec-works .flex-wrapper {
-    width: calc(100% + (100vw - 100%) / 2);
+    width: 100%;
     margin-bottom: 5rem;
+    display: block;
   }
 }
 .employment .sec-works .headline {
@@ -93,7 +95,17 @@
 }
 @media (max-width: 768px) {
   .employment .sec-works .headline {
-    flex: 0 0 15rem;
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .employment .sec-works .headline {
+    gap: 10px;
   }
 }
 .employment .sec-works .headline > li {
@@ -109,6 +121,12 @@
   .employment .sec-works .headline > li {
     font-size: 1.4rem;
     padding: 1.5rem 2rem;
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 400px) {
+  .employment .sec-works .headline > li {
+    width: calc(50% - 5px);
   }
 }
 .employment .sec-works .headline > li:not(.current):hover {
@@ -123,6 +141,11 @@
   height: 3px;
   background: #fff;
 }
+@media (max-width: 768px) {
+  .employment .sec-works .headline > li:not(:last-child):before {
+    display: none;
+  }
+}
 .employment .sec-works .headline > li:after {
   content: "";
   position: absolute;
@@ -131,6 +154,11 @@
   width: 3px;
   height: 100%;
   background: #fff;
+}
+@media (max-width: 768px) {
+  .employment .sec-works .headline > li:after {
+    display: none;
+  }
 }
 .employment .sec-works .headline > .current {
   background: var(--main_color);
@@ -159,10 +187,20 @@
   background: url(../staff/office/img/works-bg.jpg) no-repeat right top/cover;
   width: calc(100% - 15rem);
 }
+@media (max-width: 768px) {
+  .employment .sec-works .desc-list-wrapper {
+    width: 100%;
+  }
+}
 .employment .sec-works .desc-list {
   height: 100%;
   width: 100%;
   min-width: 500px;
+}
+@media (max-width: 768px) {
+  .employment .sec-works .desc-list {
+    min-width: 0;
+  }
 }
 .employment .sec-works .desc-list > li {
   display: none;

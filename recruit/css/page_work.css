@@ -79,6 +79,10 @@
 }
 .work .sec-forte {
   margin-bottom: 90px;
+  background-image: url("../work/img/work-back.jpg");
+  background-size: cover;
+  background-position: 0 86px;
+  background-repeat: no-repeat;
 }
 .work .sec-forte h2 {
   margin-bottom: 40px;
@@ -92,16 +96,9 @@
     padding-bottom: 60px;
   }
 }
-.work .sec-forte .container .forte-wrap .back-picture {
-  position: absolute;
-  z-index: -1;
-  background-image: url("../work/img/work-back.jpg");
-  height: 100%;
-  top: 0;
-  width: calc(100% + (100vw - 100%) / 2);
-}
 .work .sec-forte .container .forte-wrap .caption {
   max-width: 540px;
+  margin: 0 auto;
 }
 .work .sec-forte .container .forte-wrap .img {
   width: 90%;

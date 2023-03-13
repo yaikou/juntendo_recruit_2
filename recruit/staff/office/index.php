@@ -41,7 +41,7 @@
 		<section class="sec-works">
 			<div class="container">
 				<h2 class="noto-serif">業務紹介</h2>
-				<div class="flex-wrapper d-flex">
+				<div class="flex-wrapper">
 					<ul class="headline">
 						<li class="current">
 							<p>企画調査室</p>
@@ -68,7 +68,7 @@
 							<p>附属病院事務部</p>
 						</li>
 					</ul>
-					<div class="desc-list-wrapper" id="js-scroll">
+					<div class="desc-list-wrapper">
 						<ul class="desc-list">
 							<li class="current">
 								<p>企画調査室</p>
@@ -220,7 +220,7 @@
 
 		<section class="sec-about">
 			<div class="container">
-				<a href="">
+				<a href="https://www.juntendo.ac.jp/corp/recruit/staff/office/about">
 					<picture>
 						<source srcset="./img/about-management-bg.webp" type="image/webp">
 						<img src="./img/about-management-bg.jpg" alt="">
