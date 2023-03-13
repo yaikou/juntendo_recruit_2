@@ -87,11 +87,13 @@
 }
 .g-h .g-h__inner .g-h-contents .r-box .g-nav .g-nav-list .g-nav-list__item > .box .sub-navi {
   background-color: #fff;
-  width: 28rem;
   list-style: none;
   padding: 18px;
   transition: 0.2s;
   opacity: 0;
+  white-space: nowrap;
+  width: -moz-max-content;
+  width: max-content;
 }
 .g-h .g-h__inner .g-h-contents .r-box .g-nav .g-nav-list .g-nav-list__item > .box .sub-navi .sub-navi-list {
   margin-bottom: 16px;

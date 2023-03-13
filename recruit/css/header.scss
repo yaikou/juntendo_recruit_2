@@ -78,11 +78,12 @@
 						}
 						.sub-navi {
 							background-color: #fff;
-							width: 28rem;
 							list-style: none;
 							padding: 18px;
 							transition: 0.2s;
 							opacity: 0;
+              white-space: nowrap;
+              width: max-content;
 							.sub-navi-list {
 								margin-bottom: 16px;
 								&:not(last-child) {
